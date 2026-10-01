@@ -1,0 +1,22 @@
+# Straightforward Navigation website
+
+A small Jekyll/GitHub Pages site for Straightforward Navigation. Site copy is in `index.md`; the shared HTML layout is `_layouts/default.html` and styles are in `assets/site.css`. This is a public website repository. App code and private infrastructure stay in the separate private repository.
+
+## Preview and publishing
+
+GitHub Pages builds the `main` branch from `/`. Edit `index.md` for the home page and push to publish. Do not announce a public app download or an email signup until those services actually exist.
+
+The initial project preview uses `https://mforzano.github.io/straightforward-navigation-site/`, with the matching `url` and `baseurl` in `_config.yml`. When switching to the custom domain, set `url: https://straightforwardnavigation.com` and `baseurl: ""`, configure the domain in Pages settings, then update DNS. For a separate public website on GitHub Free, no additional GitHub hosting plan is needed.
+
+## Domain setup
+
+In GitHub repository Settings → Pages, set the custom domain to `straightforwardnavigation.com` before changing DNS. In the DNS manager for the domain, remove the registrar's parked root A record and replace it with the four GitHub Pages A records for `@`:
+
+- `185.199.108.153`
+- `185.199.109.153`
+- `185.199.110.153`
+- `185.199.111.153`
+
+Replace the parked `www` entry with a CNAME for `www` pointing to `mforzano.github.io` (not to the project path or to the apex domain). Keep MX, TXT, and other unrelated records unchanged. Once DNS and GitHub's certificate are ready, enable **Enforce HTTPS** in Settings → Pages. Do not use wildcard DNS. Check actual DNS and both domain variants before calling the migration complete.
+
+GitHub's current instructions: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site

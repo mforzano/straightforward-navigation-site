@@ -1,0 +1,40 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #102c36;
+  background: #f7f9f7;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: #075c61; text-decoration-thickness: .12em; text-underline-offset: .16em; }
+a:hover { color: #063c42; }
+a:focus-visible { outline: 3px solid #a43b20; outline-offset: 4px; border-radius: 2px; }
+.container { width: min(100% - 2.5rem, 69rem); margin-inline: auto; }
+.skip-link { position: absolute; top: -5rem; left: 1rem; padding: .65rem 1rem; background: #fff; z-index: 5; }
+.skip-link:focus { top: 1rem; }
+.site-header { background: #102c36; color: white; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .75rem 2rem; padding-block: 1rem; }
+.site-header a { color: white; }
+.brand { font-size: 1.4rem; font-weight: 750; letter-spacing: -.04em; text-decoration: none; }
+.brand-dot { color: #78ddd0; }
+.site-header nav { display: flex; gap: .35rem 1.3rem; flex-wrap: wrap; }
+.site-header nav a { font-size: .96rem; }
+main { padding-block: 3.5rem 5rem; }
+main h1 { max-width: 13ch; margin: 0 0 1.25rem; font-size: clamp(2.4rem, 6vw, 4.7rem); line-height: 1.08; letter-spacing: -.055em; }
+main h1 + p { max-width: 48rem; margin: 0 0 1rem; font-size: clamp(1.18rem, 2.6vw, 1.42rem); }
+main h1 + p + p { display: inline-block; max-width: 48rem; padding: .8rem 1rem; border-left: 4px solid #08716e; background: #e5f3ef; }
+main h2 { margin: 4rem 0 1.2rem; padding-top: 1.3rem; border-top: 1px solid #c7d4d0; font-size: clamp(1.7rem, 4vw, 2.4rem); line-height: 1.2; letter-spacing: -.03em; }
+main h3 { margin: 2.1rem 0 .35rem; font-size: 1.3rem; line-height: 1.35; }
+main p { max-width: 49rem; margin-top: .35rem; font-size: 1.05rem; }
+.site-footer { background: #e9efec; border-top: 1px solid #c7d4d0; padding-block: 2rem; }
+.site-footer p { max-width: 45rem; margin: .3rem 0; font-size: .95rem; }
+@media (max-width: 40rem) {
+  .container { width: min(100% - 2rem, 69rem); }
+  .header-inner { align-items: flex-start; }
+  .site-header nav { width: 100%; gap: .2rem 1rem; }
+  main { padding-block: 2.5rem 4rem; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
