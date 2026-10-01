@@ -1,7 +1,7 @@
 title: Straightforward Navigation
 description: Location awareness and pedestrian navigation designed with blind travelers in mind.
-url: https://mforzano.github.io
-baseurl: /straightforward-navigation-site
+url: https://straightforwardnavigation.com
+baseurl: ""
 markdown: kramdown
 kramdown:
   input: GFM

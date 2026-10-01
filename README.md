@@ -6,11 +6,11 @@ A small Jekyll/GitHub Pages site for Straightforward Navigation. Site copy is in
 
 GitHub Pages builds the `main` branch from `/`. Edit `index.md` for the home page and push to publish. Do not announce a public app download or an email signup until those services actually exist.
 
-The initial project preview uses `https://mforzano.github.io/straightforward-navigation-site/`, with the matching `url` and `baseurl` in `_config.yml`. When switching to the custom domain, set `url: https://straightforwardnavigation.com` and `baseurl: ""`, configure the domain in Pages settings, then update DNS. For a separate public website on GitHub Free, no additional GitHub hosting plan is needed.
+The site was first built and checked at the project preview URL. The current `_config.yml` and `CNAME` target `https://straightforwardnavigation.com`; the repository's Pages custom domain must also match. While DNS still points to registrar parking, the domain will not serve this site. Avoid using the former preview URL as a stable public link after enabling the custom domain.
 
 ## Domain setup
 
-In GitHub repository Settings → Pages, set the custom domain to `straightforwardnavigation.com` before changing DNS. In the DNS manager for the domain, remove the registrar's parked root A record and replace it with the four GitHub Pages A records for `@`:
+The GitHub Pages custom domain is set to `straightforwardnavigation.com`; change DNS only after confirming that setting remains in place. In the DNS manager for the domain, remove the registrar's parked root A record and replace it with the four GitHub Pages A records for `@`:
 
 - `185.199.108.153`
 - `185.199.109.153`
