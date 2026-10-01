@@ -1,35 +1,29 @@
 ---
 layout: default
 title: Home
-description: Straightforward is a location-awareness and pedestrian-navigation app designed with blind travelers in mind.
+description: Straightforward helps blind travelers explore streets, find the right bus stop, and travel virtually from anywhere.
 ---
 
-# A clearer sense of where you are.
+# Know where you are. Know where to go next.
 
-Straightforward is a location-awareness and pedestrian-navigation app built with blind travelers in mind. It brings nearby streets, intersections, places, and transit stops into an interface you can browse at your own pace.
+Straightforward brings streets, intersections, places, and transit into one iPhone app built for blind travelers. Get the details you need while you're out walking, or pick a place across the country and explore from home.
 
-**In development for iPhone.** Straightforward is being tested in beta; it is not yet a public App Store release.
+**Built for iPhone.** Straightforward is in beta.
 
-<h2 id="features">What Straightforward does</h2>
+<h2 id="features">Hear the street around you</h2>
 
-### Stay oriented as you move
+Check your street, address, travel direction, and the intersections ahead. Browse a road's crossings in order, open crossing details, or look up nearby places. Choose which changes Straightforward speaks automatically and which you want to check yourself.
 
-Read your current location, the street you’re on, the direction you’re traveling, and nearby or approaching intersections. Choose which changes the app announces aloud and which you’d rather check for yourself.
+<h2 id="transit">Find the right bus stop, not just the right corner</h2>
 
-### Explore intersections and crossings
+Two stops can have the same intersection name and put you on opposite sides of the street. Straightforward keeps those physical stops separate. Open one to hear its direction, routes, destinations, and upcoming departures, including realtime predictions when they're available.
 
-Browse intersections along a street and open crossing details where data is available. Signals and accessible pedestrian signal information depend on what has been mapped; missing information is not treated as proof that a feature is absent.
+And here's the detail that can settle the whole question at the corner: **near side or far side of the cross street.** Straightforward gives you that placement for stops where it can determine it, so you know which side of the intersection to head toward. You can also open the exact stop in maps, get walking directions, or watch it with Straightpoint.
 
-### Find places and transit
+<h2 id="virtual">Go somewhere without going anywhere</h2>
 
-Search for places, keep favorites, and open a place or walking directions in your preferred map app. Explore nearby transit stops, the routes that serve them, and scheduled departures. Realtime predictions are shown only when a usable, fresh source is available.
+Search for a place anywhere, then choose **Explore virtually from here**. Start at a business, a saved place, or even a transit stop in another city. Move along mapped streets in steps, jump to the next intersection, or switch to Auto mode and steer by turning your phone. Set your pace, pause, start over, and return to your real location whenever you're ready.
 
-<h2 id="approach">Built for useful detail, not constant chatter</h2>
+<h2 id="approach">Your pace, your voice</h2>
 
-Straightforward is designed to let you decide what you hear automatically. Its screen-reader interface keeps location details available when you want them, while separate controls let you turn spoken updates on or off. Phone-facing direction and direction of travel are treated as different things.
-
-The app is growing from location awareness toward more dependable pedestrian navigation. It does not claim that every intersection, crossing feature, or transit prediction is complete or current everywhere.
-
-<h2 id="updates">Follow along</h2>
-
-There is no public signup form or App Store download yet. When a mailing-list service is chosen and beta access opens, this page will say how to join.
+Straightforward lets you decide what gets announced as you move. Keep the street and intersection details at your fingertips with VoiceOver, or turn on spoken updates for the things you want to hear without looking for them.
