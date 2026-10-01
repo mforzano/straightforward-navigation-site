@@ -32,4 +32,4 @@ The app is growing from location awareness toward more dependable pedestrian nav
 
 <h2 id="updates">Follow along</h2>
 
-This is an early draft of the Straightforward website. There is no public signup form or App Store download yet. When a mailing-list service is chosen and beta access opens, this page will say how to join.
+There is no public signup form or App Store download yet. When a mailing-list service is chosen and beta access opens, this page will say how to join.
