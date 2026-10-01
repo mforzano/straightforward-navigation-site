@@ -20,6 +20,10 @@ Two stops can have the same intersection name and put you on opposite sides of t
 
 And here's the detail that can settle the whole question at the corner: **near side or far side of the cross street.** Straightforward gives you that placement for stops where it can determine it, so you know which side of the intersection to head toward. You can also open the exact stop in maps, get walking directions, or watch it with Straightpoint.
 
+<h2 id="straightpoint">Feel the direction with Straightpoint</h2>
+
+Straightpoint is a way to keep your bearings toward one place. Choose a bus stop or another place to watch, turn Straightpoint on, and point your phone around you. When the phone faces your chosen place, it pulses in your hand; you can also hear the place's direction and distance. Keep the place watched while you turn the guidance off, then turn it back on when you need it. It points toward the place in a straight line, while the street and transit details help you decide how to get there.
+
 <h2 id="virtual">Go somewhere without going anywhere</h2>
 
 Search for a place anywhere, then choose **Explore virtually from here**. Start at a business, a saved place, or even a transit stop in another city. Move along mapped streets in steps, jump to the next intersection, or switch to Auto mode and steer by turning your phone. Set your pace, pause, start over, and return to your real location whenever you're ready.
