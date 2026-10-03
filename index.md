@@ -4,6 +4,8 @@ title: Home
 description: Straightforward helps blind travelers explore streets, find the right bus stop, and travel virtually from anywhere.
 ---
 
+<img class="hero-logo" src="{{ '/assets/straightforward-logo.png' | relative_url }}" alt="Straightforward Navigation" width="1182" height="597">
+
 # Know where you are. Know where to go next.
 
 Straightforward brings streets, intersections, places, and transit into one iPhone app built for blind travelers. Get the details you need while you're out walking, or pick a place across the country and explore from home.

@@ -7,13 +7,14 @@
     <meta name="theme-color" content="#102c36">
     <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
     <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="icon" type="image/png" href="{{ '/assets/straightforward-icon.png' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="{{ '/' | relative_url }}" aria-label="Straightforward Navigation, home">Straightforward<span class="brand-dot" aria-hidden="true">.</span></a>
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="Straightforward Navigation, home"><img class="brand-mark" src="{{ '/assets/straightforward-icon.png' | relative_url }}" alt="" width="512" height="512">Straightforward</a>
         <nav aria-label="Main navigation">
           <a href="{{ '/#features' | relative_url }}">Features</a>
           <a href="{{ '/#transit' | relative_url }}">Transit</a>
