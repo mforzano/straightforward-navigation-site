@@ -7,527 +7,515 @@ permalink: /manual/
 
 # Straightforward user guide
 
-**First draft · October 29, 2026 · iPhone beta 0.1.0, build 30.** This manual describes the controls and behavior in that build. It is a working draft, checked against the app's source rather than a claim that every workflow has been tested on a phone. Please send corrections and questions to [contact@straightforwardnavigation.com](mailto:contact@straightforwardnavigation.com).
+Draft for iPhone beta 0.1.0, build 30 · October 29, 2026
 
-Straightforward brings location information, places, intersections, and transit together. You can read information when you want it, choose automatic announcements, point toward a destination with Straightpoint, or explore a place virtually without going there.
+Straightforward puts your address, nearby places, intersections, and transit information together. You can check your surroundings, choose what gets announced as you move, or explore somewhere before you go there. Straightpoint helps you point your phone toward a place. It gives you a straight-line direction, not a walking route.
+
+This guide describes build 30. If something is unclear or doesn't match what happens on your phone, email [contact@straightforwardnavigation.com](mailto:contact@straightforwardnavigation.com).
 
 <nav aria-labelledby="contents">
 <h2 id="contents">Contents</h2>
 <ul>
-<li><a href="#getting-started">Getting started and permissions</a></li>
-<li><a href="#getting-around">Getting around with VoiceOver</a></li>
-<li><a href="#location">Location and automatic awareness</a></li>
-<li><a href="#intersections">Intersections and crossing details</a></li>
+<li><a href="#getting-started">Getting started</a></li>
+<li><a href="#getting-around">Finding your way around the app</a></li>
+<li><a href="#location">Checking your location</a></li>
+<li><a href="#announcements">Announcements and background awareness</a></li>
+<li><a href="#intersections">Exploring intersections</a></li>
 <li><a href="#places">Finding places and addresses</a></li>
-<li><a href="#favorites">Favorites and saving your current location</a></li>
+<li><a href="#favorites">Saving places</a></li>
 <li><a href="#straightpoint">Pointing toward a place with Straightpoint</a></li>
-<li><a href="#transit">Transit stops, departures, and trip stops</a></li>
-<li><a href="#ride">Live ride announcements and get-off reminders</a></li>
-<li><a href="#virtual-walk">Virtual street exploration</a></li>
-<li><a href="#virtual-ride">Virtual bus rides</a></li>
-<li><a href="#assistant">Ask Straightforward in the app</a></li>
-<li><a href="#siri">Ask Straightforward through Siri</a></li>
-<li><a href="#settings">Settings, voices, units, and audio</a></li>
-<li><a href="#diagnostics">Feedback and diagnostic logs</a></li>
+<li><a href="#transit">Transit stops and departures</a></li>
+<li><a href="#ride">Stop announcements and get-off reminders</a></li>
+<li><a href="#virtual-walk">Exploring streets virtually</a></li>
+<li><a href="#virtual-ride">Taking a virtual bus ride</a></li>
+<li><a href="#assistant">Ask Straightforward</a></li>
+<li><a href="#siri">Using Siri</a></li>
+<li><a href="#settings">Voices, units, and other settings</a></li>
+<li><a href="#internet">What needs an Internet connection?</a></li>
+<li><a href="#diagnostics">Sending feedback and diagnostic logs</a></li>
 <li><a href="#troubleshooting">Troubleshooting</a></li>
-<li><a href="#glossary">Short glossary</a></li>
 </ul>
 </nav>
 
-<h2 id="getting-started">Getting started and permissions</h2>
+<h2 id="getting-started">Getting started</h2>
 
-### Install the beta
+### Install Straightforward
 
-Straightforward is an iPhone beta distributed through Apple's TestFlight app, not a public App Store download. If you already have an invitation, open it and follow TestFlight's installation steps. To request an invitation, email [contact@straightforwardnavigation.com](mailto:contact@straightforwardnavigation.com). This guide does not provide an unrestricted public enrollment link. Android is not available yet.
-
-The app appears on your Home Screen as **Straightforward**; its full name is **Straightforward Navigation**. Open TestFlight to check for a newer invited build if your controls differ from this draft.
+Install Apple's TestFlight app, then open your Straightforward invitation and follow the installation steps. To request an invitation, email [contact@straightforwardnavigation.com](mailto:contact@straightforwardnavigation.com). The app appears on your Home Screen as **Straightforward**. Android is not available yet.
 
 ### Allow location access
 
-1. Open Straightforward and select **Location**.
-2. When iOS asks for location access, allow access while using the app. Keep **Precise Location** enabled for useful distances, street context, and transit stops.
-3. Let the phone obtain a location. Read the status on Location; if acquisition fails, use **Retry location**.
-4. When you choose a feature that works while locked or in another app—Background awareness, live Straightpoint, or a live ride—the app requests the additional **Always** location permission it needs. Follow the permission explanation and iOS prompts.
+1. Open Straightforward and select the **Location** tab.
+2. Allow location access when iOS asks. Keep **Precise Location** on so the app can give you useful distances and street information.
+3. Wait for the phone to find your position. If it can't, select **Retry location**.
 
-You do not need to enable every background feature. Straightpoint and ride announcements have their own location use; they do not require the Background awareness switch to be on. If permission was denied, use **Open location settings** when offered, or change Straightforward's location permission in iPhone Settings, then return to the app.
+You can start with access while using the app. Features that continue while the phone is locked or you're using another app request **Always** location permission when you turn them on. You can change permission later in iPhone Settings, or select **Open location settings** when the app offers it.
 
-Online searches, road information, and transit lookups generally need an internet connection. A saved place remains saved without one, but that does not make all nearby data or trip information available offline.
+### Check the sound
 
-### Set up sound for your device
+Open **Settings → Location speech** and select **Preview voice**. You can choose a different voice and adjust its volume there. App speech has its own settings; changing it doesn't change your VoiceOver voice.
 
-Use your normal iPhone audio controls to select the speaker, headphones, hearing aids, or other hearing device you want. In **Settings → Location speech**, choose a voice and use **Preview voice**. If speech starts late or loses its first words on a hearing device, try **Keep hearing device audio connected**. [Audio settings](#settings) explains this option and its battery tradeoff.
+If your hearing device cuts off the beginning of announcements, try **Keep hearing device audio connected** on the same page. See [audio settings](#settings) for how it works.
 
-<h2 id="getting-around">Getting around with VoiceOver</h2>
+<h2 id="getting-around">Finding your way around the app</h2>
 
-The five bottom tabs are, in order: **Location**, **Intersections**, **POIs**, **Transit**, and **Settings**. **Ask Straightforward** is a separate entry above the tabs, not a sixth tab. Details, favorites, selectors, and ride configuration open within the current tab. Use the ordinary iOS **Back** control to return.
+The app has five tabs: **Location**, **Intersections**, **POIs**, **Transit**, and **Settings**. POI means point of interest: a place such as a store, restaurant, park, or public building. **Ask Straightforward**, above the tabs, opens the assistant.
 
-In this manual, **activate** means double-tap a focused control with VoiceOver, or tap it without VoiceOver. Swipe left or right to move between controls. You can use VoiceOver's Headings rotor to find screen headings.
+In this guide, select a control by tapping it, or by focusing it and double-tapping with VoiceOver.
 
-Several rows have secondary actions. With VoiceOver, focus the row, select **Actions** in the rotor if necessary, swipe up or down to choose an action, and double-tap to perform it. Without VoiceOver, open the row's visible **More** menu for the same commands. More is not always a separate VoiceOver focus stop because its commands are already on the row.
+Some rows offer more than one action. With VoiceOver, focus the row and choose **Actions** in the rotor, then swipe up or down to find the command and double-tap. Without VoiceOver, tap the row's **More** menu for the same commands. For example, a place can offer walking directions, Straightpoint, and an option to save it.
 
-An announcement switch is different: activate the row to turn automatic announcements on or off. Its current information remains readable either way. An adjustable control, such as a speed or volume slider, uses VoiceOver swipes up and down to change the value; without VoiceOver, use its slider or the accompanying controls where provided.
+For adjustable controls such as volume or speed, swipe up or down with VoiceOver to change the value. Without VoiceOver, adjust the slider or use the accompanying buttons where available.
 
-<h2 id="location">Location and automatic awareness</h2>
+<h2 id="location">Checking your location</h2>
 
-Open **Location**. Its heading is **Location and awareness**. The status explains whether the current position is available, updating, or limited.
+Select the **Location** tab to check your address, the direction you're moving, nearby intersections, and the nearest place. The information updates as your position changes. If the app is still finding your position or can't get some information, it tells you on this screen.
 
-### Read your surroundings
+The direction your phone points and the direction you're traveling are separate:
 
-Move through the information rows to read:
+- **Phone facing** tells you where the phone points, using its compass. You can check this while standing still.
+- **Heading** tells you which way you're moving. Turning the phone doesn't change your travel direction.
 
-- **Phone facing:** the direction the phone points, using its compass.
-- **Facing intersection:** a nearby intersection in the phone's facing direction. If none qualifies, the row says so.
-- **Nearest intersection:** the closest identified intersection, whether or not it is ahead of you.
-- **Nearest POI:** the nearby place identified by the place provider, with available category, distance, and direction.
-- **Heading:** your direction of travel, determined from movement, not from how you hold the phone.
-- **Approaching intersection:** an intersection ahead along your travel direction, with distance and available crossing information.
-- Address fields, including **Street number**, **Street**, neighborhood, city, state or region, postal code, and country, where available.
+The intersection rows answer different questions:
 
-Phone facing can work while you are stationary. Heading and Approaching intersection need usable movement evidence; turning the phone does not establish a travel direction. Facing and Nearest intersection do not necessarily identify the same crossing.
+- **Facing intersection** identifies an intersection in the direction your phone points, if one is available.
+- **Nearest intersection** identifies the closest intersection, even if it's behind you.
+- **Approaching intersection** identifies an intersection ahead along your direction of travel. It includes distance and available crossing information. The app needs enough movement to establish your travel direction before it can identify this intersection.
 
-Live address information comes from the location provider. In virtual mode, street information describes the mapped virtual position instead; do not read it as your physical address.
+**Nearest POI** gives you a nearby place's name, with its category, distance, and direction where available. Its actions let you open it in maps, get walking directions, or select it for Straightpoint.
 
-### Choose what the app announces
+The address rows include **Street number**, **Street**, neighborhood, city, state or region, postal code, and country when the location provider supplies them. An address can be unavailable even when the phone knows its position.
 
-1. On **Location**, find an announcement-capable row, such as **Street**, **Street number**, **Heading**, **Approaching intersection**, or **Nearest POI**.
-2. Activate its switch to choose whether changes are spoken automatically.
-3. Leave off the fields you want to read only on demand. The values continue updating while their announcement switches are off.
+When you're exploring virtually, Location describes your simulated position instead. [Virtual exploration](#virtual-walk) explains how to start and return to your real location.
 
-Phone facing, Facing intersection, and Nearest intersection are informational rows, not automatic-announcement switches. Approaching-intersection speech uses distance milestones rather than announcing every small distance change. Nearest POI announces a change of place, not every update to the distance of the same place. Your switch choices are saved.
+<h2 id="announcements">Announcements and background awareness</h2>
 
-### Stop speech quickly
+Straightforward can announce changes as you move, so you don't have to keep checking the screen. You choose which information you want to hear. **Background awareness** lets those location announcements continue while your phone is locked or you're using another app.
 
-Use **Mute speech** near the start of Location. It becomes **Unmute speech**. This stops and suppresses app-owned spoken announcements, including location, ride speech, and Straightpoint speech. It does not mute VoiceOver, and it does not turn off separately enabled ride sounds, Straightpoint guidance tones, or haptics. Use their own settings to stop those channels.
+These are two separate choices: the individual switches control *what* gets announced; Background awareness controls whether location awareness continues outside the app. Turning on Background awareness doesn't turn on every announcement.
 
-### Continue awareness while locked or in another app
+### Choose your announcements
+
+On the **Location** tab, turn on the switches for the information you want to hear, such as **Street**, **Street number**, **Heading**, **Approaching intersection**, or **Nearest POI**. Leave the others off. Your choices are saved.
+
+Turning a row's announcement switch off doesn't stop its information from updating. You can still read the current value whenever you want. **Phone facing**, **Facing intersection**, and **Nearest intersection** are information rows, not announcement switches.
+
+Approaching-intersection announcements tell you about the crossing at distance milestones rather than speaking every small change. Nearest POI announces when the nearest place changes, rather than repeating the same place as its distance changes.
+
+### Keep location announcements going in the background
 
 1. On **Location**, turn on **Background awareness**.
-2. Complete any requested Always location permission steps.
-3. Enable the individual information switches you want announced.
-4. Lock the phone or use another app. Delivery depends on location availability and iOS background execution.
-5. Return to Location and turn **Background awareness** off when you want to end that session.
+2. Complete the **Always** location permission steps if requested.
+3. Check that the individual announcement switches you want are on.
+4. Lock the phone or switch to another app.
 
-The app remembers an enabled choice and may restore it on an ordinary later foreground launch when permission is still available. Force-quitting is not a way to schedule an automatic restart: open the app again to use it. Background awareness is separate from a live ride or Straightpoint, so turn those off separately if they are also running.
+Turn **Background awareness** off to stop background location awareness. Your individual announcement choices remain saved for the next time. The app also remembers the Background awareness choice and can restore it when you reopen the app, if permission is still available. After force-quitting, open Straightforward again to use it. Background operation still depends on iOS and usable location information.
 
-<h2 id="intersections">Intersections and crossing details</h2>
+Straightpoint and live ride announcements have their own controls and can work in the background without Background awareness. Turning Background awareness off doesn't stop either of them. Stop them with the **Straightpoint** switch or **End ride**.
 
-### Browse the current road
+### Mute speech
 
-1. Open **Intersections**.
-2. Read the current-road context and intersection rows. Each row includes an available distance and cardinal direction.
-3. Use the **Nearest intersection** prefix to identify the nearest marked row. The list is geographic, not simply sorted closest first.
-4. Activate a cross-street row to browse that street around the selected intersection.
+Select **Mute speech** near the start of Location to stop spoken app announcements. Select **Unmute speech** to hear them again. This includes location, ride, and Straightpoint speech, but doesn't mute VoiceOver.
 
-On a mainly north–south road, the northward intersections come before your position and the southward ones after it. Mainly east–west roads use east and west. This order is for browsing a corridor; it does not change when you turn your phone.
+Mute speech doesn't stop Straightpoint tones, ride sounds, or vibrations. Turn those off in their respective settings or ride options if you don't want them.
 
-### Explore another street and return
+<h2 id="intersections">Exploring intersections</h2>
 
-Activating a cross street opens a new street-browse page at the same physical intersection. The road you just left appears as the current intersection. You can activate another crossing to continue exploring. This changes the browsing context, not your physical GPS location.
+Select the **Intersections** tab to browse crossings along your current road. Rows include distance and compass direction when available. The closest crossing has a **Nearest intersection** prefix.
 
-Use **Reverse browse direction** to reverse the browsing direction, **Return to my current street** to restore the live-road context, or native **Back** to return to the previous browse page.
+The list follows the road geographically rather than putting the closest crossing first. On a mainly north–south road, crossings to the north come before your position and crossings to the south come after it. On a mainly east–west road, it uses east and west. Turning your phone doesn't change that order.
 
-### Read crossing details
+### Follow a cross street
 
-On a populated **Facing intersection**, **Nearest intersection**, **Approaching intersection**, or Intersections-list row, use **More → Open crossing details**, or its VoiceOver action. Read the linear details screen, then use **Back**.
+Select a cross-street row to browse that street around the same intersection. The road you just left appears at the current intersection. You can keep selecting cross streets to explore the surrounding streets without changing your real location.
 
-Where mapped, details can include traffic control, pedestrian signals, accessible pedestrian signal features such as audible or vibrating indications and push buttons, tactile paving, kerbs, refuge islands, and crosswalk information. The screen identifies OpenStreetMap as its source and gives the data refresh date.
+**Reverse browse direction** reverses the browsing direction. **Return to my current street** brings you back to the road where you are now.
 
-Approaching information may describe cross-street arms as left, right, ahead, or behind relative to your established travel direction. Those descriptions are not compass headings or instructions to cross. Missing mapped information means unknown, not that a feature is absent. This information does not indicate the current signal phase or tell you when it is safe to cross.
+### Check crossing details
+
+Choose **Open crossing details** from an intersection row's VoiceOver actions or **More** menu. You can do this from the Intersections list or from a populated Facing, Nearest, or Approaching intersection row on Location.
+
+Details can include traffic control, pedestrian signals, accessible pedestrian signals, audible or vibrating indications, push buttons, tactile paving, kerbs, refuge islands, and crosswalks. The information comes from OpenStreetMap; the screen includes the data refresh date.
+
+An approaching crossing may describe a cross street as left, right, ahead, or behind, relative to your travel direction. These descriptions help you understand the layout. They aren't instructions to cross. Missing mapped information means unknown, not absent, and the app doesn't tell you the current signal phase or when it's safe to cross.
 
 <h2 id="places">Finding places and addresses</h2>
 
-A **POI**, or point of interest, is a mapped place such as a business, park, or public facility.
+Select the **POIs** tab to browse nearby places or search for a business, category, address, or other destination. Selecting a result opens its details. You can also choose an action directly from the row.
 
-### Search near your position
+### Search nearby
 
-1. Open **POIs**, whose screen heading is **Points of interest**.
-2. Choose **Nearby**; VoiceOver calls this **Search nearby**.
-3. Enter a business name, category, address, or destination in **Search for a place**.
-4. Press the keyboard's **Search** key.
-5. Read the result rows. Activate a result to open its in-app details, or use its secondary actions directly.
+1. Choose **Nearby**, announced as **Search nearby** by VoiceOver.
+2. Enter your search in **Search for a place**.
+3. Press the keyboard's **Search** key.
 
-Nearby search starts within two miles. Use **Expand search area to …** or **Reduce search area to …** to move between the available radii: 2, 5, 10, 25, and 50 miles. The labels use your selected distance units. Changing radius repeats the current query at that radius. The minimum and maximum controls are disabled at their respective limits.
+Nearby search starts within two miles. **Expand search area to …** and **Reduce search area to …** change the area and repeat your search. The available distances are 2, 5, 10, 25, and 50 miles, shown in your chosen units. You can't reduce below the smallest area or expand beyond the largest.
 
-The unfiltered nearby list refreshes when you open the tab. **Refresh nearby places** retrieves nearby places; it is separate from submitting a named query with the keyboard Search key. Pull-to-refresh is also available.
+The nearby list loads when you open the tab. **Refresh nearby places** or pull-to-refresh updates that list. To submit a search you've typed, press the keyboard's Search key.
 
-### Search another city with Anywhere
+### Search somewhere else
 
-1. On **POIs**, choose **Anywhere**, called **Search anywhere** by VoiceOver.
-2. Enter a place or address, including its city or region when useful.
-3. Press **Search**. Use **Repeat anywhere search** to repeat it later.
+Choose **Anywhere**, announced as **Search anywhere** by VoiceOver, then enter a place or address and press **Search**. Include the city or region to help find the right place. **Repeat anywhere search** runs the search again.
 
-Anywhere is not limited to the selected nearby radius. Remote results do not pretend to have a meaningful live distance ranking from your phone. It is also the starting point for [virtual street exploration](#virtual-walk).
+Anywhere searches aren't limited to the nearby search area. Results for a distant city aren't ranked as though they're close to your phone. You can use them to start [virtual exploration](#virtual-walk).
 
-### Understand a result's directions
+### Read a place's location
 
-A result may include its name, category, address, distance, and direction. A phrase such as **southwest side of East 14th Street** describes the side of the address street. A bearing such as **northeast** describes where the place lies from your current position. Those are different facts; either may be unavailable.
+A result can include its name, category, address, distance, and direction. **Southwest side of East 14th Street**, for example, describes the side of the street where the place is located. **Northeast** describes the direction from you to the place. The street side and the direction from you are different pieces of information.
 
-Street-side information depends on the address and mapped road geometry. No annotation means it could not be determined, not that the place is in the middle of the road. Place listings can also be outdated; Straightforward's current Apple Maps place source does not reliably identify closed businesses.
+Street-side information depends on the place's address and mapped road geometry. If it isn't shown, the app couldn't determine it. Place listings can be outdated, and the current Apple Maps source doesn't reliably identify closed businesses.
 
-### Use a place's actions
+### Open maps or choose another action
 
-Focus a result and use its VoiceOver actions, or open **More**:
+A place's VoiceOver actions and **More** menu can include:
 
-- **Open in maps** opens the selected place in your preferred external map app.
-- **Walking directions** hands the destination to that map app for routing.
-- **Watch with Straightpoint** selects it as your directional target.
-- **Explore virtually from here** starts virtual exploration at the place.
-- **Add to favorites** saves it; a saved result offers **Remove from favorites** instead.
+- **Open in maps**, to open the place in your chosen map app.
+- **Walking directions**, to ask that map app for a route.
+- **Watch with Straightpoint**, to select the place as your pointing target.
+- **Explore virtually from here**, to explore the surrounding streets without going there.
+- **Add to favorites**, to save the place. Saved places offer **Remove from favorites** instead.
 
-The **Nearest POI** row on Location also provides the applicable place actions. Choose Apple Maps or Google Maps for external handoff in **Settings → General → Map provider**. This preference does not change Straightforward's search data: the current iPhone beta uses Apple MapKit for nearby places and searches.
+Choose Apple Maps or Google Maps for map links in **Settings → General → Map provider**. This only changes which app opens places and directions. Straightforward's searches and nearby place information still come from Apple Maps in this iPhone beta.
 
-<h2 id="favorites">Favorites and saving your current location</h2>
+<h2 id="favorites">Saving places</h2>
 
-### Save and use a mapped place
+Favorites keep places you want to find again. You can save a business from search results or name the exact point where you're standing, such as a meeting spot.
 
-1. Find a place on **POIs**.
-2. Use **Add to favorites** on its row.
-3. To find it again, open **POIs → View favorite places**.
-4. Use the favorite's actions to open it in maps, request walking directions, watch it with Straightpoint, or remove it.
+### Save a listed place
 
-Favorites are stored locally. With a current position, distances are recalculated and the list is closest first. Without a current position, your favorites remain available alphabetically; an unknown distance is not shown as zero.
+1. Find the place on **POIs**.
+2. Choose **Add to favorites** from its actions.
+3. Open **POIs → View favorite places** to find it again.
 
-### Mark the point where you are standing
+A favorite offers map links, walking directions, Straightpoint, and an option to remove it. Favorites are stored on your phone. With a current position, the list shows the closest first and updates their distances. Without a position, it lists them alphabetically without a distance.
 
-1. Open **Location** and let it obtain a current position.
-2. Focus the **Location and awareness** heading and choose its **Save current location** VoiceOver action. Without VoiceOver, open the heading's **More** menu and choose the same command.
-3. In **Name this location**, read the accuracy information and enter a name in **Location name**.
-4. Activate **Save location**; the visible button says **Save**. Use **Cancel** to leave without saving.
-5. Find the named coordinate in **POIs → View favorite places**.
+### Save where you're standing
 
-The app captures the position when you invoke the command, then saves that coordinate after you confirm the name. You can use it for a meeting point or another spot that is not a listed business. Accuracy describes the phone's fix, not a promise of doorway precision. The saved coordinate uses coordinate-based map handoff rather than searching for a business with the same name.
+1. Select the **Location** tab and wait for a current position.
+2. With VoiceOver, focus **Location and awareness** and choose the **Save current location** action. Without VoiceOver, choose it from the heading's **More** menu.
+3. In **Name this location**, check the accuracy information and enter a name in **Location name**.
+4. Select **Save**, announced as **Save location** by VoiceOver.
+
+The named location appears in **POIs → View favorite places**. The app saves the point captured when you chose Save current location, not a later position after you finish typing. Its precision depends on the phone's location accuracy. Map links use the saved coordinate rather than searching for a business with the name you entered.
 
 <h2 id="straightpoint">Pointing toward a place with Straightpoint</h2>
 
-Straightpoint tells you when your phone points toward one selected coordinate. It is straight-line orientation, not turn-by-turn navigation or a walkable route.
+Straightpoint gives feedback when your phone points toward a selected place. You can use it while standing still. It points along a straight line, so it won't guide you around a building or choose a safe walking route.
 
-### Select a target and start feedback
+### Pick a place and turn it on
 
-1. Find a place, favorite, or Transit stop and use **Watch with Straightpoint**. You can also select targets with [Ask Straightforward](#assistant).
-2. Open **Location** and find **Straightpoint**. Read the watched target, available distance, and geographic direction.
-3. Turn the **Straightpoint** switch on. Complete the location permission steps if requested.
-4. Turn the phone to face the target. When aligned, the enabled feedback channels indicate its direction. Turning away stops alignment feedback.
+1. Find a place, favorite, or transit stop and choose **Watch with Straightpoint**.
+2. Select **Location** and find the **Straightpoint** switch. The row shows the selected place and its distance and direction when available.
+3. Turn **Straightpoint** on and complete any permission steps.
+4. Turn your phone toward the place. You'll get feedback when it lines up; turning away stops the alignment feedback.
 
-Selecting a target and enabling guidance are separate. Selecting does not turn an off switch on; if the switch is already on, selecting a target starts guidance after any required permission check. You do not have to walk to use the phone-facing direction.
+Choosing a place doesn't turn Straightpoint on if it's off. If it's already on, choosing another place starts guidance toward that place after any required permission check. You can also choose a target through [Ask Straightforward](#assistant).
 
-Guidance tones and vibrations become more frequent nearer the target, and tones also change pitch. With announcements enabled, alignment can speak the target's name, current straight-line distance, and cardinal direction. A distinct **Near [place]** cue indicates proximity; a place coordinate may be inside a building rather than at its entrance.
+Tones and vibrations become more frequent as you get closer, and the tones change pitch. Spoken feedback can give the place's name, straight-line distance, and compass direction. A separate **Near [place]** cue tells you you're close to its coordinate, which may be inside the building rather than at an entrance.
 
-### Pause, clear, and revisit a target
+The distance on Location remains readable even with guidance off or the phone pointing away. If the app can't give you a current distance, it says so.
 
-- Turn **Straightpoint** off to stop feedback while keeping the target.
-- Turn it back on to guide toward the same target again.
-- On its Location row, use **Clear Straightpoint watched place** to remove the target. This leaves the switch unchanged; on with **No watched place** is idle, not active guidance.
-- Use **Open watched place in maps** or **Walking directions to watched place** for external map actions.
-- For a watched transit stop, **Open bus stop times** opens its current Transit details and departures.
+### Choose the feedback
 
-The readable target distance is independent of whether guidance is on or the phone is aligned. If the position is stale or unavailable, the app identifies that rather than presenting an old distance as current.
+Open **Settings → Straightpoint** to set **Guidance tones**, **Haptics** (vibrations), and **Announcements** separately. **Tone volume** changes the tones, not speech volume.
 
-### Choose tones, haptics, speech, and posture
+**Require level phone** is off by default. Turning it on limits feedback to when you hold the phone roughly level. Raising it upright pauses feedback; lowering it resumes when the sensors are ready. With the option off, you don't have to hold the phone level. This doesn't change the separate level-phone control used to move in virtual Auto mode.
 
-Open **Settings → Straightpoint**. Independently set **Guidance tones**, **Haptics**, and **Announcements**. **Tone volume** controls tones, separately from location speech volume. Global Mute speech does not stop independently enabled guidance tones or haptics.
+Live Straightpoint can continue while locked or in another app with the required permission. It still needs usable location and sensor information, and iOS must allow it to run. Open the app again after force-quitting to use it.
 
-**Require level phone** is optional and off by default. Turn it on if you want Straightpoint feedback only while holding the phone roughly level. Raising it upright pauses feedback without clearing the target; lowering it resumes when usable sensor information is available. With this setting off, Straightpoint does not require a level phone. This setting is separate from virtual Auto mode's level-phone movement control.
+### Pause or change your target
 
-Live Straightpoint is designed to continue while locked or in another app with the necessary permission and iOS execution. Sensor availability and audio routing still matter. It is not an automatic restart service after force-quit.
+Turn **Straightpoint** off to stop feedback without losing the selected place. Turn it on again to continue.
 
-<h2 id="transit">Transit stops, departures, and trip stops</h2>
+Its Location row also offers **Open watched place in maps**, **Walking directions to watched place**, and **Clear Straightpoint watched place**. Clearing removes the place but doesn't change the switch. If the switch is on with **No watched place**, it waits until you choose one.
 
-### Choose the physical stop you need
+For a watched transit stop, **Open bus stop times** opens its details and departures.
 
-1. Open **Transit**. Nearby stops load automatically.
-2. Read the stop name, service direction, available near-side/far-side placement, distance, routes, and destinations.
-3. Choose the physical stop matching your intended route and direction. Stops on opposite curbs can have the same name and appear separately.
-4. Activate the row for its stop details and departures. Use the visible **Refresh** control or pull-to-refresh to request updated nearby or detail data.
+<h2 id="transit">Transit stops and departures</h2>
 
-**Near side** means before the cross street in the bus service's direction; **far side** means after it. These labels describe the bus's approach, not your walking direction. Placement is experimental and appears only when the available geometry supports it. Missing direction or placement is not a reason to assume the opposite.
+Select the **Transit** tab to load nearby stops. Stop rows show the name, service direction, distance, routes, destinations, and near-side or far-side placement where available. Stops across the street can share a name, so choose the physical stop for the direction you want to travel.
 
-Stop rows and stop-detail headings offer **Open in maps**, **Walking directions**, and **Watch with Straightpoint** through More and VoiceOver actions. These use the exact selected stop coordinate, not a new search for its possibly shared name.
+**Near side** means before the cross street in the bus's direction of travel. **Far side** means after it. These descriptions refer to the bus's direction, not your walking direction. Placement is experimental and appears only when the available geometry supports it.
 
-### Read departures and narrow the route list
+Select a stop to open its departures. **Refresh** or pull-to-refresh updates nearby stops or the stop details you're reading. Stop rows and detail headings also offer **Open in maps**, **Walking directions**, and **Watch with Straightpoint**. These use the selected stop's coordinate, not a search for another stop with the same name.
 
-1. Open a stop's details and read any service notices before the departure list.
-2. Use **Filter routes** to open the route checkboxes.
-3. Check the routes you want, then activate **Done**. No routes checked means all routes; checking several shows their combined departures.
-4. Use **Clear filters** to return to all routes.
-5. After the displayed departures, use **Load more departures** when offered. Each activation adds up to ten, to a maximum displayed range of 100.
+### Filter departures
 
-Filters and the expanded departure range remain when you refresh or return from a trip. A newly opened stop has its own state. Focused stop details refresh periodically while in the foreground; you can also refresh explicitly.
+1. Open a stop and read any service notices.
+2. Select **Filter routes**.
+3. Check the routes you want and select **Done**. Leaving all routes unchecked shows every route.
+4. Select **Clear filters** to show all routes again.
 
-**Scheduled** is timetable information. **Realtime** or **Predicted** indicates a usable matching current prediction, with update information. When a prediction is missing or stale, the schedule remains labeled as scheduled rather than becoming a live estimate. **Feed updated** is the source-data update, not the time your phone last checked it. Displayed clock times follow the phone's local time.
+**Load more departures** adds up to ten departures at a time, up to 100. Filters and the expanded list stay in place when you refresh or return from a trip. Stop details also refresh periodically while you're on that screen.
 
-### Explore the stops on one departure
+**Scheduled** means a timetable time. **Realtime** or **Predicted** means the app has a matching, current prediction. If one isn't available, the departure stays labeled as scheduled. **Feed updated** tells you when the source data changed, not when your phone last checked. Clock times use your phone's local time.
 
-1. In stop details, activate an individual departure to open **Stops on this trip**.
-2. Read the selected stop and ordered downstream stops for that actual dated trip.
-3. Use **Show previous stops** to include earlier visits; **Hide previous stops** collapses them again.
-4. Activate a trip-stop row to open that stop's details. Use **Back** to return to the same trip, then Back again for the origin's departures.
+### See the stops on a trip
 
-The list is not a union of every branch of a route. The selected departure establishes its trip and service day. Overnight transit service days can extend past midnight; do not substitute a different date or pattern simply because the route name is the same. A repeated stop on a loop represents a separate visit each time.
+Select a departure to open **Stops on this trip**. It shows the selected stop and the stops after it for that particular journey. **Show previous stops** includes earlier stops; **Hide previous stops** hides them again. Select a stop to open its details.
 
-Each row's arrival is predicted only when there is a matching arrival prediction. **Scheduled arrival …, realtime arrival unavailable** is not a live estimate. Skipped or canceled visits are identified as not boarding. Read relevant notices and **Open publisher notice** for the agency's full instructions when available.
+The list follows that departure's trip and service day, rather than combining every branch of a route. On a loop, the same stop may appear more than once because the bus visits it more than once.
 
-Coverage includes supported operators in the United States, Canada, and Germany, not every operator or feature in those countries. Schedules, live predictions, notices, stop placement, and live ride support have different availability. A stop with departures is not automatically a supported ride-watch trip.
+An arrival is only a prediction if there's a matching arrival update. **Scheduled arrival …, realtime arrival unavailable** is still a schedule. Skipped or canceled stops are marked as not boarding. Read any notices, and select **Open publisher notice** for the agency's full instructions when offered.
 
-<h2 id="ride">Live ride announcements and get-off reminders</h2>
+Transit supports operators in the United States, Canada, and Germany, but not every operator in those countries. Schedules, predictions, notices, placement, and live ride announcements can have different coverage. Seeing departures doesn't necessarily mean ride announcements are available for that trip.
 
-Ride watch follows your position along one selected actual bus trip. It does not identify a bus merely because you are nearby, and it does not use the phone's pointing direction to track progress.
+<h2 id="ride">Stop announcements and get-off reminders</h2>
 
-### Start from a departure
+Ride watch follows your phone's position along a selected bus trip. It can announce each stop, remind you before your get-off stop, or do both. You choose the trip; the app doesn't identify your bus just because you're near it.
 
-1. Open **Transit**, select a stop, and find the departure matching your actual route, direction, destination, and trip pattern.
-2. On that departure, use **Start stop announcements** from More or VoiceOver actions. You can also open the departure and use the same action on **Stops on this trip**.
-3. In configuration, turn **Announce each stop** on for ordinary stop announcements. Leave it off if you want only a selected get-off reminder.
-4. Optionally activate **Choose get-off stop**. Select the appropriate occurrence on the trip, or use its **Get off here** action. The picker returns to configuration. Native Back leaves the picker without changing the destination.
-5. Set **Speech**, **Sound**, and **Haptics** independently. These options are saved. Read any conditional drop-off instructions.
-6. Activate **Start onboard**. Despite the label, you can start before boarding or partway through the trip. Start it while the app is foregrounded, complete permissions, and wait for success before locking the phone.
-7. After a successful start, the app switches to **Location**, where **Current ride** shows the running watch.
+### Start a ride
 
-An eligible trip-stop row also offers **Notify me before this stop**, which opens live configuration with that occurrence selected. Nothing starts simply by opening configuration or choosing a destination.
+1. On **Transit**, open a stop and find the departure for your route, direction, destination, and stopping pattern.
+2. Choose **Start stop announcements** from the departure's actions. The same action is available after opening **Stops on this trip**.
+3. Turn **Announce each stop** on to hear every stop, or leave it off for a get-off reminder only.
+4. Select **Choose get-off stop** if you want a reminder, then choose the stop. You can also use a stop's **Get off here** action. On loops, choose the visit you intend to use.
+5. Set **Speech**, **Sound**, and **Haptics** separately. These choices are saved. Read any special drop-off instructions.
+6. Select **Start onboard**, complete any permission steps, and wait for the ride to start before locking the phone.
 
-Choose the trip that represents the journey you will actually take, including the right branch or short turn. Starting late is supported, but this is not a promise that any departure with the same route number will work. If the required trip path or passenger-stop information is unavailable, the app explains that Start is unavailable; ordinary departures remain usable.
+You can start before boarding or partway through the trip despite the Start onboard label. Once it starts, the app opens **Location**, where **Current ride** shows your progress.
 
-### Understand tracking and reminders
+A trip-stop row's **Notify me before this stop** action opens ride setup with that stop selected. Choosing a stop or opening setup doesn't start the watch; you still select Start onboard.
 
-Ride watch needs a sequence of usable GPS fixes and vehicle movement to establish progress. A stationary wait before boarding does not expire the watch just because the bus has not moved. Once underway, **Next stop** and remaining-stop information appear when tracking is confident. **Tracking uncertain** means the app cannot currently establish that position; GPS loss, similar parallel paths, or repeated loop traversals can cause this.
+If Start isn't available, read the explanation. Ride watch needs the trip's path and passenger-stop information. Another departure with the same route number may follow a different branch or short turn and isn't necessarily a substitute.
 
-With a get-off destination, reminders distinguish three stops away, your stop next, and approaching your stop. Ordinary stop announcements and the three-stop advance notice use an ordinary chime; an imminent destination has a distinct urgent cue. Missed stops and reminder stages are not queued for replay when you start late or regain GPS. Prediction times do not advance the tracker.
+### Follow your progress
 
-The watch can operate while locked or in another app after explicit Start with permission, subject to iOS execution and usable GPS. **Background awareness** and **Straightpoint** need not be enabled. Offline tracking may use last-known service information; it cannot discover a new cancellation without a successful update.
+The watch needs usable GPS fixes and movement to establish where you are along the trip. Waiting for the bus doesn't expire it simply because you haven't moved. Once it can track you, Current ride shows **Next stop** and remaining-stop information. **Tracking uncertain** means it can't confidently place you on the trip, for example during a GPS gap or on similar or repeated route sections.
+
+Get-off reminders tell you when you're three stops away, when your stop is next, and when you're approaching it. Ordinary stop announcements and the three-stop reminder use the ordinary chime; the imminent get-off reminder has a distinct urgent cue. The app doesn't replay passed stops or missed reminder stages after a late start or GPS gap. Arrival predictions don't move the tracker forward; your position does.
+
+A live ride can continue while locked or in another app after you've started it and allowed permission, subject to iOS and GPS availability. You don't need to turn on Background awareness or Straightpoint.
 
 ### End or resume a ride
 
-On **Location → Current ride**, activate **End ride** to stop tracking and cues and remove the saved session. A running live ride has no user Pause control. Ending does not turn it into a resumable ride, and it does not clear a Straightpoint target.
+Select **End ride** under **Location → Current ride** to stop tracking and cues and remove the saved ride. There isn't a Pause button for a running live ride, and an ended ride can't be resumed. Ending a ride doesn't clear your Straightpoint target.
 
-After an interruption or later app launch, a retained ride may appear paused. Read the explanation and use **Resume**—called **Resume ride watch** by VoiceOver—only if offered, or **End ride** to discard it. A canceled, changed, or unsupported trip may require selecting a new trip instead. Opening the app alone does not resume a saved ride. If End reports incomplete cleanup, use its retry instruction rather than assuming it finished.
+After an interruption or a later launch, a saved ride may appear paused. Read its status and select **Resume**, announced as **Resume ride watch** by VoiceOver, if offered. Opening the app doesn't resume it automatically. You can select End ride instead. If cleanup doesn't finish, follow the retry message. A canceled or changed trip may need a new selection.
 
-You can also start route-first announcements or change an active ride's get-off reminder with [Ask Straightforward](#assistant).
+You can also start a ride by route name or change its get-off reminder through [Ask Straightforward](#assistant).
 
-<h2 id="virtual-walk">Virtual street exploration</h2>
+<h2 id="virtual-walk">Exploring streets virtually</h2>
 
-Virtual street exploration moves a simulated position along mapped roads. You remain physically where you are. Location, nearby places, and intersections can describe that virtual position while the mode is active.
+Virtual mode lets you explore mapped streets without going there. It moves a simulated position while you stay where you are. Location, places, and intersections describe the virtual surroundings until you exit.
 
-### Choose a starting place
+### Choose where to start
 
-1. Open **POIs → Anywhere**.
-2. Search for a place or address, including its city when needed.
-3. On the intended result, choose **Explore virtually from here** through More or VoiceOver actions.
-4. Open **Location** and find **Virtual mode: [place]** and its movement controls.
+1. Open **POIs → Anywhere** and search for a place or address.
+2. On the result you want, choose **Explore virtually from here**.
+3. Select **Location** to find **Virtual mode: [place]** and the movement controls.
 
-This action is also available on other place-like rows where offered. A nearby place can be a starting point too; Anywhere is useful for exploring a remote destination.
+You can also start from a nearby place or another row that offers the same action.
 
-### Move in Manual mode
+### Move a step at a time
 
-1. Select **Manual mode**; the visible button says **Manual**.
-2. Focus **Virtual step distance** and swipe up or down to change it. Without VoiceOver, use **Less** and **More**.
-3. Choose a distance or **Next intersection**.
-4. Activate an available road-direction button to move along that mapped road.
-5. Read the updated Location information or browse the other tabs for the new virtual surroundings.
+Select **Manual**, announced as **Manual mode** by VoiceOver. Adjust **Virtual step distance** with VoiceOver swipes up or down, or with **Less** and **More**. Choose a distance or **Next intersection**, then select a road-direction button to move that way.
 
-Available directions follow the mapped road connections. You are not moving a free-floating point across buildings. Repeat direction activations to continue, or choose another direction at a junction.
+Location updates for the new position. You can check the other tabs to explore nearby places and crossings. Directions follow connected mapped roads, rather than moving through buildings or across unmapped space.
 
-### Move in Auto mode
+### Move by pointing the phone
 
-1. In the virtual Location controls, select **Auto mode**; the visible button says **Auto**.
-2. Choose **Virtual travel speed**: Slow walking, Normal walking, Fast walking, or Driving.
-3. Turn yourself and the phone toward an available mapped road direction.
-4. Hold the phone roughly level to move. Raise it upright to pause.
-5. At a junction, Auto stops. Face another road to take it. To continue in the original direction, raise the phone upright and lower it again.
+1. Select **Auto**, announced as **Auto mode** by VoiceOver.
+2. Set **Virtual travel speed** to Slow walking, Normal walking, Fast walking, or Driving.
+3. Face the phone toward an available road direction and hold it roughly level to move.
+4. Raise the phone upright to pause.
+5. At an intersection, Auto stops. Face another road to take it. To keep going in the original direction, raise the phone upright and lower it again.
 
-Walking uses footsteps; Driving uses a continuous movement sound. A junction has a separate brief cue. A repeating blocked sound means no mapped continuation in the current direction, not that there is a physical wall. Driving is a virtual pace, not a claim that the road can legally or physically be driven.
+Walking plays footsteps; Driving plays a continuous movement sound. There's a brief cue at intersections. A repeating blocked sound means there isn't a mapped continuation in that direction. Driving is a simulated speed, not a statement that driving is allowed on that road.
 
-Leaving Location or backgrounding the app pauses Auto. Returning requires usable heading and tilt information. Switch to Manual or use Exit to end Auto; there is no separate Stop auto command.
+Leaving Location or switching away from the app pauses Auto. When you return, it needs usable heading and tilt information. Select Manual to stop Auto movement or Exit to finish exploring.
 
-### Start over, use virtual Straightpoint, and exit
+### Start over or return to your location
 
-**Start over**, called **Return to virtual starting place** by VoiceOver, returns the simulated position to the original starting point. It does not exit to live GPS or erase favorites.
+**Start over**, announced as **Return to virtual starting place** by VoiceOver, brings you back to the original virtual starting point.
 
-To point toward a place from the simulated position, select **Watch with Straightpoint** while virtual, then turn on **Virtual Straightpoint** on Location. Phone facing and the virtual coordinate drive its feedback. This virtual watch is temporary and does not replace your saved live Straightpoint target.
+You can choose **Watch with Straightpoint** while exploring, then turn on **Virtual Straightpoint** on Location. It points from your simulated position using the phone's facing direction. This temporary target doesn't replace your saved live target.
 
-Use **Exit virtual mode**—the visible button says **Exit**—to return to live location. Live modes active before street exploration can be restored, so check their switches. A physical ride suspended by entering virtual mode does not automatically resume; use its explicit Resume control after exit. Walking-directions handoff is restricted while virtual so an external map app does not silently route from your real GPS instead.
+Select **Exit**, announced as **Exit virtual mode** by VoiceOver, to return to your real location. Previously active live features can be restored, so check their switches. A live ride suspended by virtual exploration stays paused until you explicitly Resume it. Walking-directions links are restricted while virtual so a map app doesn't unexpectedly route from your real location instead.
 
-If **Waiting for road data** appears, wait for loading and try the direction again. Missing map data is not the same as reaching a dead end.
+If **Waiting for road data** appears, give it time to load and try again. Missing data isn't the same as a dead end.
 
-<h2 id="virtual-ride">Virtual bus rides</h2>
+<h2 id="virtual-ride">Taking a virtual bus ride</h2>
 
-Virtual bus playback follows a selected actual trip's route rather than the phone's facing direction. It is separate from Manual and Auto street exploration.
+A virtual bus ride follows a selected trip's path and stops. Unlike Auto street exploration, it doesn't follow the direction you point the phone.
 
-1. Open **Transit**, choose a stop, and find a dated departure.
-2. Use **Explore this trip virtually** on that departure, or on **Stops on this trip** after opening it.
-3. Optionally use **Choose get-off stop** and select a visit; Back from the picker returns without changing the destination.
-4. Set **Announce each stop**, **Speech**, **Sound**, and **Haptics** as desired.
-5. Activate **Play virtual ride**.
-6. On Location, use the **Virtual bus ride** controls: **Play** or **Pause**, **Next stop**, and the **Virtual bus speed** slider with Slow, Normal, Fast, and Very fast.
-7. Activate **Exit virtual mode** to finish.
+1. On **Transit**, find a departure and choose **Explore this trip virtually**. You can also choose it after opening **Stops on this trip**.
+2. Optionally select **Choose get-off stop** and choose a visit.
+3. Set **Announce each stop**, **Speech**, **Sound**, and **Haptics**.
+4. Select **Play virtual ride**.
+5. On Location, find **Virtual bus ride** and use **Play**, **Pause**, **Next stop**, and **Virtual bus speed**. The speed choices are Slow, Normal, Fast, and Very fast.
+6. Select **Exit virtual mode** when you're finished.
 
-Playback begins at the departure's selected lookup stop. **Next stop** advances along the intervening path and then pauses; it is not a teleport. The selected get-off reminder and stop announcements use the shared ride feedback behavior.
+Playback starts at the stop where you looked up the departure. Next stop moves along the path to the next stop, then pauses. Stop announcements and get-off reminders use the same feedback as live rides.
 
-Virtual bus playback is foreground-only. Leaving the app or locking the phone pauses it; activate Play after returning. It does not exercise physical GPS tracking. If there was a live ride, virtual entry suspends it and exit leaves it paused for explicit Resume.
+Locking the phone or leaving the app pauses playback. Select Play after returning. A virtual ride doesn't test live GPS tracking. If you had a live ride running, entering virtual mode suspends it; it stays paused after exit until you Resume it.
 
-<h2 id="assistant">Ask Straightforward in the app</h2>
+<h2 id="assistant">Ask Straightforward</h2>
 
-The assistant is optional. It requires **iOS 27**, an Apple Intelligence-compatible iPhone, Apple Intelligence enabled, and Apple's system model downloaded and ready. These requirements apply to Ask Straightforward, not to all the app's ordinary features. If unavailable, read the explanation and continue using the tabs.
+Ask Straightforward lets you request location information, find places, choose Straightpoint targets, and set up ride announcements in your own words.
 
-### Ask and choose a result
+It needs iOS 27, an Apple Intelligence-compatible iPhone, Apple Intelligence enabled, and Apple's system model downloaded and ready. These requirements apply to the assistant, not the ordinary tabs. If it isn't ready, the app explains why.
 
-1. Activate **Ask Straightforward** above the five tabs, including from ordinary detail screens. You can also use the Location heading's More menu or VoiceOver action.
-2. Type in the request field or use iOS keyboard dictation.
-3. Press **Return** or activate **Send**.
-4. Read the answer. With VoiceOver, a completed reply receives screen-reader focus; there is not a separate duplicate app-spoken answer.
-5. If choices appear, use the numbered result buttons. Text pages show up to ten full results, with **Load more** and **Done with results** when applicable.
+### Ask a question
 
-While choices are pending, the composer and Send are disabled. Use the result controls, not typed numbers or a new question. **Load more** continues the retained list. **Done with results**, or **No thanks** on an offered wider search, returns you to typing. After a target is successfully saved, selection finishes automatically and the composer becomes available; chat itself stays open. Older or expired result buttons can become unavailable—ask again rather than relying on an old choice.
+1. Select **Ask Straightforward** above the tabs. You can also open it from the Location heading's actions.
+2. Type your request or use iOS keyboard dictation.
+3. Press **Return** or select **Send**.
+4. Read the answer. With VoiceOver, focus moves to the completed reply without a second copy spoken by the app.
+5. If it offers choices, select a numbered result button.
 
-Use ordinary **Back** to leave chat. It cancels running text work; idle conversation history and still-valid choices can remain when you return. Scroll through history manually. Text and Siri have separate conversations and choices; an unfinished text list is not Siri's current list.
+The assistant shows up to ten full results at a time. **Load more** continues the list; **Done with results** returns you to typing. While it needs a selection, the request field and Send are disabled, so choose a button rather than typing a number or another question. **No thanks** declines an offered wider search.
 
-### Things to ask
+After it saves a target, you can type again without closing chat. Selecting a target doesn't turn Straightpoint on if it's off. Ask it to start Straightpoint separately.
 
-These requests use app information and actual search results:
+Leaving chat cancels a running text request. Conversation history and still-valid choices can remain when you return, but aren't permanently saved. Scroll to read earlier messages. If an old result has expired, ask again. Text chat and Siri have separate conversations and result lists.
 
-- “What's my current address?” or “What's my street number?”
-- “Which intersection am I facing?” or “What's my upcoming intersection?”
-- “What's the nearest intersection?” or “What intersections are nearby?”
-- “What POIs are nearby?” or “Find pizza nearby.”
-- “What transit stops are nearby?” or “What bus routes are nearby?”
-- “Set Straightpoint to the nearest Starbucks.”
-- “Set Straightpoint on the southbound Bx9 stop at Broadway and Mosholu.”
-- “Set Straightpoint to 123 Main Street, Seattle.”
-- “Point at my saved hotel.” or “Point to the facing intersection.”
-- “What's my Straightpoint target?” followed by “Start Straightpoint,” “Stop Straightpoint,” or “Clear Straightpoint.”
+### Check your surroundings or find a target
 
-Use a name you actually saved for a favorite; there is no automatic built-in Home address. Saved-name matching can find both saved businesses and custom named coordinates. Multiple saved matches require a choice. Selecting a Straightpoint target does not enable guidance—ask **Start Straightpoint** separately if it is off.
+Try requests such as:
 
-Be explicit about **Nearby** or **Anywhere** for place targets. Nearby named-place resolution searches locally; Anywhere can find a remote place or address without a local radius. Anywhere is not worldwide transit search. The assistant does not silently widen a failed nearby search; when offered, **Search Anywhere for this name** is your choice.
+- "What's my current address?" or "What's my street number?"
+- "Which intersection am I facing?" or "What's my upcoming intersection?"
+- "What's the nearest intersection?" or "What intersections are nearby?"
+- "Find pizza nearby."
+- "What transit stops are nearby?" or "What bus routes are nearby?"
+- "Set Straightpoint to the nearest Starbucks."
+- "Set Straightpoint on the southbound Bx9 stop at Broadway and Mosholu."
+- "Set Straightpoint to 123 Main Street, Seattle."
+- "Point at my saved hotel." or "Point to the facing intersection."
+- "What's my Straightpoint target?"
+- "Start Straightpoint," "Stop Straightpoint," or "Clear Straightpoint."
+
+For a saved place, ask for the name you saved. There isn't a built-in Home address. If several saved places match, choose the right one from the results.
+
+Say **Nearby** for a local search or **Anywhere** for a remote place or address. Anywhere doesn't provide worldwide transit search. If a nearby place search fails, the assistant may offer **Search Anywhere for this name**; you decide whether to widen it.
 
 ### Start a ride by route name
 
-You can ask for a nearby bus route without first opening a departure:
+You don't have to open a departure first. For example:
 
-- “Announce the stops on the Bx9 southbound.”
-- “Start announcements for the Bx9 southbound and tell me when we get to Broadway and Mosholu Avenue.”
-- “Tell me when we get to Broadway and Mosholu Avenue on the Bx9.” This requests a reminder without every-stop announcements.
+- "Announce the stops on the Bx9 southbound."
+- "Start announcements for the Bx9 southbound and tell me when we get to Broadway and Mosholu Avenue."
+- "Tell me when we get to Broadway and Mosholu Avenue on the Bx9."
 
-Choose among the actual route, destination, and stopping-pattern results. General compass wording helps describe the intended direction, but a route can bend and the available choices may include branches or short turns. Route discovery is nearby, not a global route catalog. A partial result set requires your explicit choice, and missing trip support or permission can prevent Start.
+The last example asks for a get-off reminder without every-stop announcements. Choose the matching route, destination, and stopping pattern from the results. Route discovery is nearby. A compass direction helps narrow the request, but routes can bend, branch, or end early, so check the actual choices. If results are incomplete, you still need to make an explicit choice. The trip must support ride watch and have the necessary permission to start.
 
-After a successful start, the app moves to **Location → Current ride**. During that ride, “Tell me when we get to Broadway and Mosholu Avenue” can add or change its destination using the active trip's visits. Repeated or ambiguous stop names need a choice. “What is my ride status?” reads the current watch; “End ride” ends it.
+After a successful start, the app opens **Location → Current ride**. During that ride, you can say "Tell me when we get to Broadway and Mosholu Avenue" to add or change the reminder. Repeated or ambiguous stop names need a selection. "What is my ride status?" checks the ride, and "End ride" stops it.
 
-### Interpretation and privacy
+### What the assistant handles
 
-The assistant interprets requests with Apple's on-device model and has no automatic cloud-model fallback. Online place and transit lookups are separate from interpretation. Siri recognition and keyboard dictation follow Apple's system settings; they are not a promise of app-controlled offline speech recognition.
+Apple's on-device model interprets requests. There's no automatic fallback to a cloud model, though place and transit searches still use online services. Siri recognition and keyboard dictation follow Apple's settings.
 
-The assistant cannot provide arbitrary turn-by-turn walking navigation, identify safe crossing moments, or control features outside its supported commands. It has no custom wake word or always-listening microphone mode. Conversations are memory-only, not a permanent saved chat archive. Diagnostic exports can contain location-bearing search information; [review the export explanation](#diagnostics) before sharing one.
+The assistant doesn't provide turn-by-turn walking navigation or tell you when it's safe to cross. It only controls supported app features, and has no custom wake word or always-listening microphone mode. Diagnostic exports can include location and search details; see [diagnostic logs](#diagnostics) before sharing one.
 
-<h2 id="siri">Ask Straightforward through Siri</h2>
+<h2 id="siri">Using Siri</h2>
 
-Use the supported two-step invocation:
+1. Say **"Hey Siri, Ask Straightforward."**
+2. Approve any first-use shortcut confirmation.
+3. Wait for **"What would you like to ask Straightforward?"**
+4. Say your request.
 
-1. Say **“Hey Siri, Ask Straightforward.”**
-2. Complete any first-use shortcut enablement confirmation.
-3. Wait for **“What would you like to ask Straightforward?”**
-4. Say your request, such as “What's my current address?” or “Announce the stops on the Bx9 southbound.”
+Keep the invocation and request separate. Combining them can send your question to Siri's own search instead.
 
-Do not rely on combining the invocation and question into one phrase: Siri may send the trailing words to its own search instead of Straightforward.
+Siri reads up to five choices at a time. Answer with a name, number, or distinguishing destination. Say **more** for another page or **done** to finish. "First one" means the first result on the current page. If Siri can't distinguish your answer, use more of the name or destination it read.
 
-Siri can read up to five concise choices at a time. Answer with a name, number, or distinguishing destination, say **more** for the next available page, or **done** to finish. A plain “first one” refers to the current page. If Siri cannot distinguish the result, narrow the choice using what it actually read. The dialogue has a limited lifetime and number of follow-ups; reopen Ask Straightforward if it expires, or use the in-app list.
+The conversation has a limited lifetime and number of follow-ups. If it expires, invoke Ask Straightforward again or use the in-app list. The shortcut opens the app to carry out the request without opening text chat. Siri handles its spoken replies; choices from a separate text conversation don't carry over.
 
-The shortcut opens the app in the foreground to carry out the request, without opening the text composer. Siri owns its spoken dialogue. A result from a separate in-app conversation is not automatically a Siri choice.
+<h2 id="settings">Voices, units, and other settings</h2>
 
-<h2 id="settings">Settings, voices, units, and audio</h2>
+Select the **Settings** tab, then choose **General**, **Location speech**, **Ride announcements**, **Straightpoint**, or **Diagnostics**. Changes are saved on your phone. If a change can't be saved, the app tells you.
 
-Open **Settings** and choose **General**, **Location speech**, **Ride announcements**, **Straightpoint**, or **Diagnostics**. Each opens its own page with native Back. Changes save locally; read any save-failure message before assuming a change was kept.
+### Distance units and maps
 
-### General
+In **General → Distance units**, choose **Feet and miles** or **Meters and kilometers**. Feet and miles is the default. Changing units updates distances, search areas, virtual controls, and new assistant answers. It doesn't change the size of a search area or movement step, and earlier chat messages keep their original wording.
 
-- **Distance units:** choose **Feet and miles** or **Meters and kilometers**. The default is feet and miles. The choice applies across current labels, VoiceOver, new assistant answers, guidance, search areas, and virtual distance controls; earlier chat text stays as originally written. Changing units does not change the physical size of a search or movement preset.
-- **Map provider:** choose **Apple Maps** or **Google Maps** for external place opening and walking directions. It does not switch the source of search or Nearest POI data.
+**Map provider** chooses Apple Maps or Google Maps for opening places and walking directions. It doesn't change where Straightforward gets search results or nearby place information.
 
 ### Location speech
 
-1. Activate **Language** to choose a language and see its available voices.
-2. Choose a voice, or use **Voice** to change within the selected language. **System default** follows the system speech default.
-3. Adjust **Speech rate**, **Pitch**, and **Volume**. With VoiceOver, focus the adjustable control and swipe up or down.
-4. Activate **Preview voice** to hear the configuration. Unmute app speech first if necessary.
-5. Use **Reload voices** if the installed list has changed, or **Reset speech settings** to restore defaults.
+1. Open **Location speech → Language** and choose a language, then a voice. **Voice** lets you change voices within that language. **System default** follows the system speech default.
+2. Adjust **Speech rate**, **Pitch**, and **Volume**.
+3. Select **Preview voice** to listen. Unmute app speech first if needed.
 
-These settings do not change your VoiceOver voice. If a chosen installed voice is removed or unavailable, the app explains the fallback rather than losing your saved choice.
+**Reload voices** updates the list of installed voices. **Reset speech settings** restores defaults. If your selected voice becomes unavailable, the app explains the fallback without discarding your saved choice. These controls don't change VoiceOver's voice.
 
-**Keep hearing device audio connected** is off by default. When enabled and eligible, it plays digital silence between announcements to help keep the audio stream connected. It applies while the app is foregrounded or user-started Background awareness is active, with speech unmuted. It can affect battery use and other audio. Turn it off if it is not useful for your particular hearing device; it is not a guarantee that every audio route behaves identically.
+**Keep hearing device audio connected** plays digital silence between announcements to help prevent a hearing device from cutting off the start of speech. It's off by default. It works while the app is open or user-started Background awareness is active, with app speech unmuted. It can use more battery and affect other audio. Try it with your hearing device and turn it off if it doesn't help.
 
-### Ride announcements
+### Ride voice
 
-Ride announcements have an independent voice, initially **System default**. Choose **Independent ride voice**, then **Ride language** and **Ride voice**, or choose **Use location speech voice** to link the voice to Location speech. Linking does not copy Location speech rate, pitch, and volume.
+Ride announcements have their own voice, initially **System default**. Choose **Independent ride voice**, then **Ride language** and **Ride voice**. Or choose **Use location speech voice** to use that voice for rides too. This links the voice, not the location speech rate, pitch, or volume.
 
-Use **Preview ride voice** and **Reload ride voices** as needed. A preview is not a running ride. Configure whether a particular ride uses Speech, Sound, Haptics, or every-stop announcements in that ride's configuration, not on this voice page.
+**Preview ride voice** lets you listen, and **Reload ride voices** updates the voice list. Choose Speech, Sound, Haptics, and whether to announce every stop when setting up the ride itself.
 
-### Straightpoint and Diagnostics
+### Straightpoint settings
 
-The Straightpoint page contains **Guidance tones**, **Tone volume**, **Haptics**, **Announcements**, and **Require level phone**. See [Straightpoint setup](#straightpoint) for their separate effects. Diagnostics contains the export and clear controls described next.
+The Straightpoint page has **Guidance tones**, **Tone volume**, **Haptics**, **Announcements**, and **Require level phone**. See [Straightpoint](#straightpoint) for how these affect feedback.
 
-<h2 id="diagnostics">Feedback and diagnostic logs</h2>
+<h2 id="internet">What needs an Internet connection?</h2>
 
-Send questions or corrections to [contact@straightforwardnavigation.com](mailto:contact@straightforwardnavigation.com). For a beta issue, include your app build, what you tried, the control or message involved, and what happened instead. For an incorrect transit placement, include the stop, route, service direction, and the missing or wrong near-side/far-side detail. Send personal travel details privately, not in a public post.
+Place searches, fresh road information, and transit lookups generally need a connection. Straightforward isn't a complete offline map or transit app.
 
-### Share a diagnostic report
+Your favorites stay saved on the phone without Internet, but saving a place doesn't download the surrounding streets, businesses, or transit information. Straightpoint uses the selected coordinate and phone sensors for direction; finding a new place or refreshing its details can still need a connection.
+
+A ride that's already started may keep tracking with its saved trip information and usable GPS. It can't learn about a new cancellation until it successfully checks for updates. Don't treat an old schedule as a current prediction.
+
+The assistant interprets requests on the phone, but that doesn't make its online searches available offline. Siri and keyboard dictation have their own Apple system requirements.
+
+<h2 id="diagnostics">Sending feedback and diagnostic logs</h2>
+
+Email [contact@straightforwardnavigation.com](mailto:contact@straightforwardnavigation.com) with your build number, what you tried, and what happened. Include the exact control or message if you can. For incorrect transit placement, include the stop, route, service direction, and the missing or wrong near-side/far-side description.
+
+### Share diagnostic logs
 
 1. Reproduce the issue if practical, then open **Settings → Diagnostics**.
-2. Choose **Share diagnostic logs**.
-3. Read the location-privacy confirmation and choose **Continue** if you want to proceed.
-4. In the iOS share sheet, choose a destination such as Messages or **Save to Files**. You approve any actual sending in the destination app.
+2. Select **Share diagnostic logs**.
+3. Read the location-privacy explanation and select **Continue** if you want to share.
+4. Choose a destination in the iOS share sheet, such as Messages or **Save to Files**.
 
-If **Send diagnostic logs** is available, it opens a preaddressed email draft. Add a short issue description and use Mail's Send control. If Mail opens but cannot send, close the draft and use Share diagnostic logs instead; do not clear the evidence first. Opening a draft or share sheet does not itself mean delivery succeeded.
+If **Send diagnostic logs** is available, it opens an addressed email draft. Add a description and send it through Mail. If Mail won't send, close the draft and use Share diagnostic logs instead. Keep the logs until you've exported what you need.
 
-Logs are local and bounded, and can include precise real or virtual locations and dedicated search/target diagnostic details. Nothing is uploaded automatically by this export flow. Review the privacy explanation and choose who receives the file. Do not post a raw report publicly.
+Logs are kept locally with a size limit and can include precise real or virtual locations, searches, and target details. This export flow doesn't upload them automatically. You choose who receives the file and approve sending in the destination app. Don't post raw logs or personal travel details publicly.
 
-**Clear local diagnostic logs** removes the app's retained diagnostic evidence and its retained export copy. It does not remove a report you already sent or saved elsewhere. Export does not automatically clear the journal; canceling an export keeps the evidence.
+**Clear local diagnostic logs** removes the retained logs and the app's export copy. It doesn't delete a report you've already sent or saved elsewhere. Exporting or canceling an export doesn't clear the logs.
 
 <h2 id="troubleshooting">Troubleshooting</h2>
 
 ### Location or distances are unavailable
 
-Read the Location status, check Precise Location and the allowed permission in iPhone Settings, then return and use **Retry location**. GPS can be limited indoors or between buildings. An unavailable address can be a separate provider issue even when the phone has a coordinate.
+Check Straightforward's location permission and Precise Location in iPhone Settings, then return and select **Retry location**. GPS can be limited indoors or between buildings. The phone can have a position even if the address provider can't supply an address.
 
-### Phone facing works, but Heading or Approaching intersection does not
+### Phone facing works, but Heading or Approaching intersection doesn't
 
-Those rows need coherent travel movement, not a compass turn. Continue ordinary movement when appropriate and let the app collect usable fixes. Use Nearest intersection or Intersections for manual information in the meantime.
+Those fields need movement, not a compass turn. As you travel, give the app time to collect usable location fixes. You can check Nearest intersection or browse Intersections in the meantime.
 
-### There is no sound
+### You can't hear announcements
 
-Check **Unmute speech**, iPhone volume, and the selected audio route. Try **Settings → Location speech → Preview voice**. For Straightpoint, check its master switch, target, alignment, channel switches, Tone volume, and optional level-phone requirement. For a ride, check its Speech and Sound choices separately. VoiceOver volume and app speech settings are not the same control.
+Check **Unmute speech**, iPhone volume, and the audio device receiving sound. Try **Settings → Location speech → Preview voice**.
 
-### A search has no results, or the service is unavailable
+For Straightpoint, check its switch, selected place, alignment, feedback settings, Tone volume, and Require level phone option. For a ride, check Speech and Sound separately. VoiceOver and app speech have different volume controls.
 
-Check whether you selected Nearby or Anywhere. Submit a query with the keyboard Search key; expand a nearby search deliberately if useful. An unavailable service is not proof there are no places or stops. Check the connection and retry. For long-running or unsuccessful assistant lookups, return to the relevant ordinary tab or retry after the service becomes available.
+### A search has no results
+
+Check Nearby or Anywhere, then submit the search with the keyboard's **Search** key. You can expand a nearby search area. If the service is unavailable, check the connection and retry; that message doesn't mean there are no places or stops. You can use the ordinary tabs if an assistant search isn't completing.
 
 ### Road or crossing information is missing
 
-**Some road data unavailable** means partial coverage; available results can still be useful. **Waiting for road data** in virtual mode is a loading or coverage problem, not an actual dead end. Allow loading, then retry a Manual direction, or let Auto retry. OpenStreetMap crossing details are incomplete in many places.
+**Some road data unavailable** means coverage is partial. **Waiting for road data** means the virtual road information hasn't loaded, not that you've reached a dead end. Wait and retry a Manual direction, or let Auto retry. OpenStreetMap crossing details are incomplete in many areas.
 
-### A stop has no live prediction or no ride Start
+### A departure has no prediction or ride Start option
 
-Read scheduled departures as schedules, not tracking. Realtime requires a matching current agency prediction. Ride watch additionally needs suitable trip geometry and passenger-stop metadata; ordinary Transit can work without them. Choose the correct dated departure and read the specific unavailable explanation rather than substituting an unrelated trip.
+Scheduled departures aren't live tracking. Predictions need a matching current agency update, and ride watch needs additional trip-path and passenger-stop information. Check the selected departure and the app's explanation. Transit departures may still work even when live ride announcements aren't available.
 
 ### Current ride says Tracking uncertain
 
-The watch is still running unless it says paused or ended. GPS gaps, ambiguous paths, and repeated route sections can prevent confident progress. Check the Current ride status; do not assume a frozen next-stop count is a current location. End ride remains available. If a restored ride is paused, explicitly Resume when offered.
+The watch is still running unless its status says paused or ended, but it can't confidently track your progress. A next-stop count that hasn't changed may be out of date. You can end the ride. If a restored ride is paused, select Resume when offered.
 
-### An assistant request does not go through
+### Ask Straightforward isn't working
 
-Check its readiness explanation: the assistant needs the supported OS, eligible hardware, enabled Apple Intelligence, and a ready model. Ordinary tabs do not need that model. If the text field is disabled because results are pending, choose a result or Done with results. If Siri searches the web, try the separate invocation, wait, then request sequence.
+Read its readiness explanation. It needs the supported iOS version, eligible hardware, enabled Apple Intelligence, and a ready model. The ordinary tabs don't need that model. If the request field is disabled, finish the pending choices or select **Done with results**. If Siri searches the web instead, invoke Ask Straightforward first, wait for its prompt, then ask.
 
-### Controls differ from this guide
+### Your controls differ from the guide
 
-Check your installed TestFlight build and whether a newer invited build is available. Earlier native clients can show an updated-client requirement for a feature; reloading a screen cannot add missing native capabilities. This draft describes build 30, not every development version.
-
-<h2 id="glossary">Short glossary</h2>
-
-- **POI:** point of interest; a listed place such as a business, park, or facility.
-- **Phone facing:** the direction the phone points, from its compass.
-- **Heading or travel course:** the direction you are moving, from location evidence.
-- **Cardinal bearing:** north, northeast, east, and so on, from your position toward a coordinate.
-- **Street side:** the geographic side of the place's address street, not its bearing from you.
-- **Near side / far side:** before / after the cross street along the bus service's direction.
-- **Straightpoint:** phone-facing feedback toward a selected coordinate in a straight line.
-- **Scheduled / realtime:** a timetable time / a usable matching current prediction.
-- **Actual dated trip:** one route journey on its transit service day, with its own ordered stop visits.
-- **Virtual position:** the simulated location used for exploration, not your real GPS position.
+Check your installed build in TestFlight and whether a newer invited build is available. This guide describes build 30. If the app says a feature needs an updated client, reloading a screen won't add it.
 
 [Return to contents](#contents)
