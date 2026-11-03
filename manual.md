@@ -1,17 +1,17 @@
 ---
 layout: default
 title: User guide (draft)
-description: How to use Straightforward on iPhone, including location awareness, intersections, places, transit, ride announcements, virtual exploration, Straightpoint, and Siri.
+description: How to use Straightforward on iPhone, including shared map pins, Nearby Explorer favorites import, location awareness, intersections, transit, virtual exploration, Straightpoint, and Siri.
 permalink: /manual/
 ---
 
 # Straightforward user guide
 
-Draft for iPhone beta 0.1.0, build 30 · October 29, 2026
+Draft for iPhone beta 0.1.0, build 31 · November 3, 2026
 
 Straightforward puts your address, nearby places, intersections, and transit information together. You can check your surroundings, choose what gets announced as you move, or explore somewhere before you go there. Straightpoint helps you point your phone toward a place. It gives you a straight-line direction, not a walking route.
 
-This guide describes build 30. If something is unclear or doesn't match what happens on your phone, email [contact@straightforwardnavigation.com](mailto:contact@straightforwardnavigation.com).
+This guide describes build 31. If something is unclear or doesn't match what happens on your phone, email [contact@straightforwardnavigation.com](mailto:contact@straightforwardnavigation.com).
 
 <nav aria-labelledby="contents">
 <h2 id="contents">Contents</h2>
@@ -23,7 +23,9 @@ This guide describes build 30. If something is unclear or doesn't match what hap
 <li><a href="#intersections">Exploring intersections</a></li>
 <li><a href="#places">Finding places and addresses</a></li>
 <li><a href="#favorites">Saving places</a></li>
+<li><a href="#import-favorites">Importing Nearby Explorer favorites</a></li>
 <li><a href="#straightpoint">Pointing toward a place with Straightpoint</a></li>
+<li><a href="#shared-location">Using a shared map pin</a></li>
 <li><a href="#transit">Transit stops and departures</a></li>
 <li><a href="#ride">Stop announcements and get-off reminders</a></li>
 <li><a href="#virtual-walk">Exploring streets virtually</a></li>
@@ -32,6 +34,7 @@ This guide describes build 30. If something is unclear or doesn't match what hap
 <li><a href="#siri">Using Siri</a></li>
 <li><a href="#settings">Voices, units, and other settings</a></li>
 <li><a href="#internet">What needs an Internet connection?</a></li>
+<li><a href="#privacy">Installation usage and privacy</a></li>
 <li><a href="#diagnostics">Sending feedback and diagnostic logs</a></li>
 <li><a href="#troubleshooting">Troubleshooting</a></li>
 </ul>
@@ -84,7 +87,11 @@ The intersection rows answer different questions:
 
 **Nearest POI** gives you a nearby place's name, with its category, distance, and direction where available. Its actions let you open it in maps, get walking directions, or select it for Straightpoint.
 
-The address rows include **Street number**, **Street**, neighborhood, city, state or region, postal code, and country when the location provider supplies them. An address can be unavailable even when the phone knows its position.
+In live use, **Street** uses mapped road geometry to associate your position with a nearby road. It shows the road name without a prefix when the matched road is within 50 feet and location accuracy is good. **Near** means the associated road is farther away or accuracy is uncertain; it doesn't mean that you are on that road. If there isn't a suitable match or road data is unavailable, Street is unavailable rather than using an address-provider street instead. In virtual mode, **On** describes the simulated position on a mapped road.
+
+Street chooses a road by proximity, while Approaching intersection uses your direction of travel along the road. At a crossing, Street can briefly name the road you're crossing without changing the approaching-intersection corridor. Road geometry is based on mapped centerlines, not doorways or exact sidewalk boundaries. The app doesn't detect whether you're indoors.
+
+**Street number** is Apple's reverse-geocoded estimate of a nearby address number, not a measurement of the house or entrance directly beside you. It is separate from the mapped Street value; don't combine them into a guaranteed address. Neighborhood, city, state or region, postal code, and country also depend on the location provider. An address can be unavailable even when the phone knows its position.
 
 When you're exploring virtually, Location describes your simulated position instead. [Virtual exploration](#virtual-walk) explains how to start and return to your real location.
 
@@ -121,15 +128,21 @@ Mute speech doesn't stop Straightpoint tones, ride sounds, or vibrations. Turn t
 
 <h2 id="intersections">Exploring intersections</h2>
 
-Select the **Intersections** tab to browse crossings along your current road. Rows include distance and compass direction when available. The closest crossing has a **Nearest intersection** prefix.
+Select the **Intersections** tab to browse crossings along your current road. Rows include distance and compass direction when available. In the live list, **Selected:** marks the nearest intersection. When browsing another street, it marks the intersection you used to enter that street instead.
 
 The list follows the road geographically rather than putting the closest crossing first. On a mainly north–south road, crossings to the north come before your position and crossings to the south come after it. On a mainly east–west road, it uses east and west. Turning your phone doesn't change that order.
 
 ### Follow a cross street
 
-Select a cross-street row to browse that street around the same intersection. The road you just left appears at the current intersection. You can keep selecting cross streets to explore the surrounding streets without changing your real location.
+1. Select a cross-street row to browse that street around the same intersection.
+2. If several cross streets meet there, **Choose street** opens. Select **Browse [street name]** for the street you want. Use the native **Back** control to leave the chooser without selecting a street.
+3. In the new street list, **Selected:** marks the same physical intersection, now labeled with the road you just left. With VoiceOver, focus moves to that row so you can continue from the same junction.
+
+You can keep selecting cross streets to explore the surrounding streets without changing your real location. Use native **Back** to return through the streets you've browsed.
 
 **Reverse browse direction** reverses the browsing direction. **Return to my current street** brings you back to the road where you are now.
+
+Junction names can include an unnamed connection, such as **Broadway and unnamed service road**, **unnamed driveway**, or **unnamed footpath**. These describe mapped connections; a service road isn't necessarily a driveway or building entrance. The road graph includes major roads as well as local streets and paths where mapped. A connection in the list isn't proof of pedestrian access or a safe crossing.
 
 ### Check crossing details
 
@@ -198,6 +211,31 @@ A favorite offers map links, walking directions, Straightpoint, and an option to
 
 The named location appears in **POIs → View favorite places**. The app saves the point captured when you chose Save current location, not a later position after you finish typing. Its precision depends on the phone's location accuracy. Map links use the saved coordinate rather than searching for a business with the name you entered.
 
+### Delete several favorites
+
+1. Open **POIs → View favorite places**, then select **Edit** in the navigation header.
+2. Select a favorite row to check it; select it again to uncheck it. In this mode, rows select favorites rather than opening their details. VoiceOver reads the checkbox state and confirms **Selected [name]** or **Deselected [name]**.
+3. To select the whole list, including favorites not currently onscreen, choose **Select All**. **Deselect All** clears the selection. VoiceOver confirms the bulk selection, and the toolbar shows the selected count.
+4. Select **Delete N favorites**. Read the count in the confirmation, then select its **Delete N favorites** action to remove those favorites, or **Cancel** to keep them. Delete is unavailable when nothing is selected. Deletion can't be undone.
+5. Select **Done** to leave selection mode and return to ordinary place details and actions. Done clears selection; it doesn't delete anything or rename favorites.
+
+<h3 id="import-favorites">Import Nearby Explorer favorites</h3>
+
+Bring a Nearby Explorer favorites export into Straightforward without replacing your existing favorites.
+
+1. Save the Nearby Explorer **.nefavs** export in the iPhone **Files** app or an available Files provider such as iCloud Drive.
+2. In Straightforward, open **Settings → Favorites → Import Nearby Explorer favorites**.
+3. Select **Choose export from Files**, then choose the export.
+4. Read the preview: it gives the record count, valid favorites, invalid records skipped, already-imported records, new favorites to add, and provider ID conflicts. Different records with the same provider ID are kept separately. Unsupported metadata fields are counted but not imported.
+5. Select **Import N favorites** to save the new favorites. Before confirming, **Cancel import** or native **Back** leaves favorites unchanged. Once saving has begun, leaving the screen doesn't undo the save.
+6. After the success message, open **POIs → View favorite places**. Select a favorite for its details, including notes, accessibility notes, website, and floor when present. Native **Back** from the import screen returns to Favorites settings; Back again returns to Settings.
+
+The supported export is UTF-8 JSON, version 1, schema 5, up to 8 MB and 20,000 records. Choosing a file only previews it; nothing is uploaded, and the original file isn't edited or deleted. Names, coordinates, addresses, categories, phone numbers, websites, and notes are retained. Saved alarm and floor metadata doesn't turn on alarms or provide indoor navigation.
+
+Reimporting unchanged records skips those already imported, even if the file is reordered. Existing favorites and your edits aren't overwritten. A changed source record is added separately, not applied as an update. An imported favorite you delete can be added again by reimporting it.
+
+For imported named places, **Open in maps** searches your chosen map provider using the saved name and available address, with the coordinate as location context. It may offer several matches or no match. **Walking directions**, Straightpoint, and virtual starting points use the stored destination coordinate. Personal **Save current location** bookmarks continue to open as coordinate pins, not business-name searches.
+
 <h2 id="straightpoint">Pointing toward a place with Straightpoint</h2>
 
 Straightpoint gives feedback when your phone points toward a selected place. You can use it while standing still. It points along a straight line, so it won't guide you around a building or choose a safe walking route.
@@ -215,6 +253,8 @@ Tones and vibrations become more frequent as you get closer, and the tones chang
 
 The distance on Location remains readable even with guidance off or the phone pointing away. If the app can't give you a current distance, it says so.
 
+The target can also include a street-side description when the place and road data support one. This is separate from its compass direction from you. **Loading street side**, **Street side temporarily unavailable**, or **Street side could not be determined** describes that optional information, not a failure of the pointing target. Not every target has a known street side.
+
 ### Choose the feedback
 
 Open **Settings → Straightpoint** to set **Guidance tones**, **Haptics** (vibrations), and **Announcements** separately. **Tone volume** changes the tones, not speech volume.
@@ -230,6 +270,20 @@ Turn **Straightpoint** off to stop feedback without losing the selected place. T
 Its Location row also offers **Open watched place in maps**, **Walking directions to watched place**, and **Clear Straightpoint watched place**. Clearing removes the place but doesn't change the switch. If the switch is on with **No watched place**, it waits until you choose one.
 
 For a watched transit stop, **Open bus stop times** opens its details and departures.
+
+<h3 id="shared-location">Use a shared map pin</h3>
+
+You can send a static destination pin from Maps to Straightforward and use it as a Straightpoint target. For example, someone can send a meeting point in Messages without having Straightforward themselves.
+
+1. In **Apple Maps**, select the destination or drop a pin at the intended stationary location. If someone sent you a location card in Messages, open that pin in Maps first.
+2. Choose **Share**, then **Straightforward**. If it isn't listed, check the share sheet's **More** list.
+3. On **Shared location**, review the static pin and its name. Edit **Pin name** if you want another label. Latitude and longitude are directly in the preview's reading order; you don't need to open another details control.
+4. Select **Set Straightpoint** to replace the selected target. This doesn't change your current position or turn the Straightpoint switch on. If Straightpoint is already on, guidance updates to the new pin; if it's off, turn it on from Location when you want guidance.
+5. To leave without changing the old target, choose **Cancel** or native **Back** before confirming.
+
+This is a one-time point, not Find My or live-person tracking. If the person or destination moves, ask for a fresh static pin. Pin placement and phone location accuracy affect the result; Straightpoint supplies straight-line direction, not a walking route or an exact entrance.
+
+Not every Maps link describes an exact destination. Some explicit-coordinate Google Maps pins work, but opaque Google place links, searches, directions, and live-location invitations aren't accepted as guessed targets. If the app can't read the share, open Maps and share an explicit static destination pin instead. If that format is still unsupported, send feedback rather than relying on a map's viewing center as the destination.
 
 <h2 id="transit">Transit stops and departures</h2>
 
@@ -423,7 +477,7 @@ The conversation has a limited lifetime and number of follow-ups. If it expires,
 
 <h2 id="settings">Voices, units, and other settings</h2>
 
-Select the **Settings** tab, then choose **General**, **Location speech**, **Ride announcements**, **Straightpoint**, or **Diagnostics**. Changes are saved on your phone. If a change can't be saved, the app tells you.
+Select the **Settings** tab, then choose **General**, **Location speech**, **Ride announcements**, **Straightpoint**, **Favorites**, or **Diagnostics**. Favorites contains [Import Nearby Explorer favorites](#import-favorites). Changes are saved on your phone. If a change can't be saved, the app tells you.
 
 ### Distance units and maps
 
@@ -460,6 +514,14 @@ Your favorites stay saved on the phone without Internet, but saving a place does
 A ride that's already started may keep tracking with its saved trip information and usable GPS. It can't learn about a new cancellation until it successfully checks for updates. Don't treat an old schedule as a current prediction.
 
 The assistant interprets requests on the phone, but that doesn't make its online searches available offline. Siri and keyboard dictation have their own Apple system requirements.
+
+Mapped road coverage includes the United States, Canada, and Germany. Available connections and crossing details depend on the mapped data and its refresh; this isn't a promise that every road, path, or intersection is present. Road coverage and transit coverage are separate.
+
+<h2 id="privacy">Installation usage and privacy</h2>
+
+Requests to Straightforward's road and transit services can include a random identifier saved for this installation, the app version and build, and whether the app is in the foreground or background. This helps measure active installations and service failures; an installation isn't necessarily one person, and offline-only use isn't counted.
+
+The separate usage-metrics records store a digest of that random identifier, hourly service counts and outcomes, and coarse app metadata for up to 90 days. They don't include coordinates, searches, favorite names, email addresses, or device fingerprints, and aren't joined to operational access logs. The identifier isn't sent to Apple or Google Maps. These limited service metrics are separate from the local diagnostic logs you explicitly export below.
 
 <h2 id="diagnostics">Sending feedback and diagnostic logs</h2>
 
@@ -516,6 +578,6 @@ Read its readiness explanation. It needs the supported iOS version, eligible har
 
 ### Your controls differ from the guide
 
-Check your installed build in TestFlight and whether a newer invited build is available. This guide describes build 30. If the app says a feature needs an updated client, reloading a screen won't add it.
+Check your installed build in TestFlight and whether a newer invited build is available. This guide describes build 31. If the app says a feature needs an updated client, reloading a screen won't add it.
 
 [Return to contents](#contents)
