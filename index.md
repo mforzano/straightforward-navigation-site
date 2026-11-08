@@ -26,6 +26,12 @@ Two stops can have the same intersection name and sit on opposite curbs. Straigh
 
 Get upcoming departures for an exact stop: scheduled times and realtime predictions where available. Filter by route and browse the stops on an actual departure's trip. Stops also work with map handoff, walking directions, and Straightpoint.
 
+### Hear your stops. Know when to get off.
+
+On supported bus trips, hear each stop as you ride, get reminders before your chosen get-off stop, or use both. Choose speech, sounds, vibrations, or a combination. Announcements can continue with your phone locked after you start the ride and grant location permission.
+
+Reminders let you know when you're three stops away, when your stop is next, and when you're approaching it—so you can follow the ride without constantly checking the screen.
+
 <h2 id="virtual">Go somewhere without going anywhere</h2>
 
 Explore another city from home. Anywhere search lets you find a remote place and use it as the starting point for virtual exploration, with surrounding mapped streets, places, and intersections available before you go.
