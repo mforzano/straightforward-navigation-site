@@ -52,7 +52,7 @@ Pause the feedback without losing your target. Straightpoint points toward it **
 
 <h2 id="approach">Hear the street around you—on your terms</h2>
 
-Keep your current address and street number, nearest POI, travel direction, and approaching intersections at your fingertips. Choose which changing fields Straightforward announces automatically, in the foreground or with user-enabled **Background awareness**.
+Keep your current address and street number, nearest POI, travel direction, and approaching intersections at your fingertips. Choose which changing fields Straightforward announces automatically—even while the app is in the background or your phone is locked.
 
 Browse a road's intersections in geographic order and explore crossing details. Get cross streets and, where mapped information is available, traffic lights, accessible pedestrian signals, and other crossing details. VoiceOver keeps those details available even when their automatic announcements are off.
 
