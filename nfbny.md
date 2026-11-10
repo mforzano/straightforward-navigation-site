@@ -32,7 +32,7 @@ For help, ask during the seminar or [email contact@straightforwardnavigation.com
 
 Choose one of the places below and use Straightpoint to find which direction it is from you. Straightpoint gives straight-line direction rather than walking directions; for a walking route, choose **Walking directions** from the place's actions.
 
-1. Open the **POIs** tab and choose **Nearby** (VoiceOver calls it **Search nearby**). In **Search for a place**, enter your chosen place's name and press the keyboard's **Search** key.
+1. Open the **Explore** tab, select the **POIs** section button, and choose **Nearby** (VoiceOver calls it **Search nearby**). In **Search for a place**, enter your chosen place's name and press the keyboard's **Search** key.
 2. Find the result with the address listed below. With VoiceOver, focus that result, turn the rotor to **Actions**, then swipe up or down to **Watch with Straightpoint** and double-tap. Without VoiceOver, tap the result's **More** button and choose **Watch with Straightpoint**.
 3. Select the **Location** tab and turn the **Straightpoint** switch on, following any permission prompts.
 4. Slowly turn your phone to point toward the place. Tones and vibrations tell you when it lines up; turn away and the alignment feedback stops. Check the distance and direction on Location as you explore. Turn **Straightpoint** off when you're finished.
