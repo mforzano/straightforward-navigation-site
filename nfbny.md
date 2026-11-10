@@ -1,16 +1,16 @@
 ---
 layout: default
-title: NFB NY demo
+title: NFB NY Convention
 permalink: /nfbny/
 content_class: manual
 noindex: true
 sitemap: false
-description: Try Straightforward at the NFB NY travel seminar on November 12, 2026. Choose a nearby place, point toward it with Straightpoint, and share what you find.
+description: Try Straightforward at the NFB NY Convention travel seminar on November 12, 2026. Choose a nearby place, point toward it with Straightpoint, and share what you find.
 ---
 
-# Straightforward at NFB NY
+# Straightforward at the NFB NY Convention
 
-Welcome to the **November 12, 2026 travel seminar** at the **Holiday Inn Brooklyn Downtown, 300 Schermerhorn Street, Brooklyn**. Try Straightforward, an iPhone navigation app built for and by blind travelers, and share what works for you.
+Welcome to the **NFB NY Convention**! Join the **November 12, 2026 travel seminar** at the **Holiday Inn Brooklyn Downtown, 300 Schermerhorn Street, Brooklyn**. Try Straightforward, an iPhone navigation app built for and by blind travelers, and share what works for you.
 
 Keep this page handy: **straightforwardnavigation.com/nfbny**.
 
