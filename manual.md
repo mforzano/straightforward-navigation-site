@@ -577,7 +577,7 @@ In **General → Virtual navigation**, **Virtual sound effects** controls walkin
 
 **Reload voices** updates the list of installed voices. **Reset speech settings** restores defaults. If your selected voice becomes unavailable, the app explains the fallback without discarding your saved choice.
 
-**Keep hearing device audio connected** plays digital silence between announcements to help prevent a hearing device from cutting off the start of speech. It's off by default. It works while the app is open or background location announcements are active, with app speech unmuted. Try it with your hearing device and turn it off if it doesn't help.
+**Keep hearing device audio connected** plays digital silence between announcements to help prevent a hearing device from cutting off the start of speech. It's off by default. It works while the app is open or background location announcements are active, with app speech unmuted. Turning it off stops the digital silence.
 
 ### Ride voice
 
