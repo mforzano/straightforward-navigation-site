@@ -116,7 +116,7 @@ Straightforward can announce changes as you move, so you don't have to keep chec
 
 ### Choose your announcements
 
-On the **Location** tab, turn on the switches for the information you want to hear, such as **Street**, **Street number**, **Heading**, **Approaching intersection**, or **Nearest POI**. Leave the others off. Your choices are saved.
+On the **Location** tab, turn on the switches for the information you want to hear, such as **Street**, **Street number**, **Heading**, **Approaching intersection**, or **Nearest POI**. Turn a switch off when you don’t want that information announced. Your choices are saved.
 
 All rows keep updating, including those with announcements off. **Phone facing**, **Facing intersection**, and **Nearest intersection** are available to read on the screen.
 
