@@ -43,11 +43,15 @@ Distances below are approximate from the hotel.
 
 ### Devoción
 
+Coffee shop.
+
 **276 Livingston Street at Bond Street, Brooklyn.** About **0.1 mile** from the hotel.
 
 [Find Devoción at 276 Livingston Street in Google Maps](https://www.google.com/maps/search/?api=1&query=Devoci%C3%B3n%2C+276+Livingston+Street%2C+Brooklyn%2C+NY).
 
 ### Betty Bakery
+
+Bakery.
 
 **448 Atlantic Avenue, between Bond and Nevins Streets, Brooklyn.** About **0.2 mile** from the hotel.
 
@@ -55,11 +59,15 @@ Distances below are approximate from the hotel.
 
 ### Little Sweet Café
 
+Café serving coffee, pastries, and crêpes.
+
 **77 Hoyt Street, Brooklyn.** About **0.3 mile** from the hotel.
 
 [Find Little Sweet Café at 77 Hoyt Street in Google Maps](https://www.google.com/maps/search/?api=1&query=Little+Sweet+Caf%C3%A9%2C+77+Hoyt+Street%2C+Brooklyn%2C+NY).
 
 ### Another option: White Noise Coffee
+
+Coffee shop and roastery.
 
 **57 Smith Street, Brooklyn.** About **0.3 mile** from the hotel.
 
