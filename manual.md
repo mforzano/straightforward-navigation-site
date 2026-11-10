@@ -1,21 +1,32 @@
 ---
 layout: default
 title: User guide (draft)
-description: How to use Straightforward on iPhone, including shared map pins, Nearby Explorer favorites import, location awareness, intersections, transit, virtual exploration, Straightpoint, and Siri.
+description: Get started with spoken announcements, then explore places, save and follow recorded routes, check transit, use Straightpoint, and explore virtually with Straightforward on iPhone.
 permalink: /manual/
 ---
 
 # Straightforward user guide
 
-Draft for iPhone beta 0.1.0, build 31 · November 3, 2026
+Updated for the upcoming iPhone beta
 
 Straightforward puts your address, nearby places, intersections, and transit information together. You can check your surroundings, choose what gets announced as you move, or explore somewhere before you go there. Straightpoint helps you point your phone toward a place. It gives you the straight-line direction to your chosen place.
 
-This guide describes build 31. If something is unclear or doesn't match what happens on your phone, email [contact@straightforwardnavigation.com](mailto:contact@straightforwardnavigation.com).
+If something is unclear or doesn't match what happens on your phone, email [contact@straightforwardnavigation.com](mailto:contact@straightforwardnavigation.com).
+
+<h2 id="quick-start">Quick start: hear your surroundings</h2>
+
+1. Open Straightforward and select **Location**. Allow location access and keep **Precise Location** on. See [Getting started](#getting-started) for installation and permission setup.
+2. On **Location**, turn on the announcement switches for what you want to hear: for example, **Street** for street changes, **Approaching intersection** for crossings ahead as you travel, or **Nearest POI** for nearby places. Choose the ones useful to you, then hear updates as you move.
+3. If speech is muted, select **Unmute speech** near the start of **Location**.
+4. Open **Settings → Location speech** and select **Preview voice** to hear the app's voice. Adjust the voice and volume there.
+5. To keep location announcements going while the phone is locked or you're using another app, turn on **Announce while app is in the background** in **Settings → Location speech** and allow **Always** location access when requested.
+
+Read [Announcements and background awareness](#announcements) to choose and change what gets spoken.
 
 <nav aria-labelledby="contents">
 <h2 id="contents">Contents</h2>
 <ul>
+<li><a href="#quick-start">Quick start: hear your surroundings</a></li>
 <li><a href="#getting-started">Getting started</a></li>
 <li><a href="#getting-around">Finding your way around the app</a></li>
 <li><a href="#location">Checking your location</a></li>
@@ -24,6 +35,8 @@ This guide describes build 31. If something is unclear or doesn't match what hap
 <li><a href="#places">Finding places and addresses</a></li>
 <li><a href="#favorites">Saving places</a></li>
 <li><a href="#import-favorites">Importing Nearby Explorer favorites</a></li>
+<li><a href="#routes">Recording and following saved routes</a></li>
+<li><a href="#route-replay">Exploring a saved route virtually</a></li>
 <li><a href="#straightpoint">Pointing toward a place with Straightpoint</a></li>
 <li><a href="#shared-location">Using a shared map pin</a></li>
 <li><a href="#transit">Transit stops and departures</a></li>
@@ -56,17 +69,19 @@ You can start with access while using the app. Features that continue while the 
 
 ### Check the sound
 
-Open **Settings → Location speech** and select **Preview voice**. You can choose a different voice and adjust its volume there. App speech has its own settings; changing it doesn't change your VoiceOver voice.
+Select **Unmute speech** on **Location** if speech is muted, then open **Settings → Location speech** and select **Preview voice**. You can choose a different voice and adjust its volume there. App speech has its own settings; changing it doesn't change your VoiceOver voice.
+
+To hear your surroundings as you move, turn on the individual announcement switches on **Location**, as described in the [Quick start](#quick-start).
 
 If your hearing device cuts off the beginning of announcements, try **Keep hearing device audio connected** on the same page. See [audio settings](#settings) for how it works.
 
 <h2 id="getting-around">Finding your way around the app</h2>
 
-The app has five tabs: **Location**, **Intersections**, **POIs**, **Transit**, and **Settings**. POI means point of interest: a place such as a store, restaurant, park, or public building. **Ask Straightforward**, above the tabs, opens the assistant.
+The app has five tabs: **Location**, **Intersections**, **Explore**, **Transit**, and **Settings**. On **Explore**, choose the **POIs**, **Favorites**, or **Routes** section button. POI means point of interest: a place such as a store, restaurant, park, or public building. **Ask Straightforward**, above the tabs, opens the assistant.
 
 In this guide, select a control by tapping it, or by focusing it and double-tapping with VoiceOver.
 
-Some rows offer more than one action. With VoiceOver, focus the row and choose **Actions** in the rotor, then swipe up or down to find the command and double-tap. Without VoiceOver, tap the row's **More** menu for the same commands. For example, a place can offer walking directions, Straightpoint, and an option to save it.
+Some rows offer more than one action. With VoiceOver, focus the row, swipe up or down to find the command, and double-tap. Without VoiceOver, tap the row's **More** menu for the same commands. For example, a place can offer walking directions, Straightpoint, and an option to save it.
 
 For adjustable controls such as volume or speed, swipe up or down with VoiceOver to change the value. Without VoiceOver, adjust the slider or use the accompanying buttons where available.
 
@@ -97,7 +112,7 @@ When you're exploring virtually, Location describes your simulated position inst
 
 <h2 id="announcements">Announcements and background awareness</h2>
 
-Straightforward can announce changes as you move, so you don't have to keep checking the screen. Choose what you want to hear with the individual announcement switches. **Background awareness** lets those location announcements continue while your phone is locked or you're using another app.
+Straightforward can announce changes as you move, so you don't have to keep checking the screen. Choose what you want to hear with the individual announcement switches on **Location**. In **Settings → Location speech**, **Announce while app is in the background** lets those announcements continue while your phone is locked or you're using another app.
 
 ### Choose your announcements
 
@@ -109,18 +124,18 @@ Approaching-intersection announcements tell you about the crossing at distance m
 
 ### Keep location announcements going in the background
 
-1. On **Location**, turn on **Background awareness**.
+1. Open **Settings → Location speech** and turn on **Announce while app is in the background**.
 2. Complete the **Always** location permission steps if requested.
 3. Check that the individual announcement switches you want are on.
 4. Lock the phone or switch to another app.
 
-Turn **Background awareness** off to stop background location awareness. Your individual announcement choices remain saved for the next time. The app also remembers the Background awareness choice and can restore it when you reopen the app, if permission is still available. After force-quitting, open Straightforward again to use it.
+Turn **Announce while app is in the background** off to stop background location awareness. Your individual announcement choices remain saved. The app remembers the background setting and restores it when you reopen the app with the required permission. Read any permission or startup message beneath the switch; **Open location settings** takes you to the iPhone permission settings when offered. After force-quitting, open Straightforward again to use it.
 
-Straightpoint and live ride announcements use their own background controls. Stop them with the **Straightpoint** switch or **End ride**.
+Straightpoint, live rides, and route recording or following manage their own background operation. Stop them with the **Straightpoint** switch, **End ride**, or the relevant recording/following controls.
 
 ### Mute speech
 
-Select **Mute speech** near the start of Location to stop spoken app announcements. Select **Unmute speech** to hear them again. This includes location, ride, and Straightpoint speech, but doesn't mute VoiceOver.
+Select **Mute speech** near the start of Location to stop spoken app announcements. Select **Unmute speech** to hear them again. This includes location, ride, saved-route, and Straightpoint speech, but doesn't mute VoiceOver.
 
 Control Straightpoint tones and vibrations in **Settings → Straightpoint**, and ride sounds and vibrations in the ride options.
 
@@ -152,7 +167,7 @@ An approaching crossing may describe a cross street as left, right, ahead, or be
 
 <h2 id="places">Finding places and addresses</h2>
 
-Select the **POIs** tab to browse nearby places or search for a business, category, address, or other destination. Selecting a result opens its details. You can also choose an action directly from the row.
+Select **Explore → POIs** to browse nearby places or search for a business, category, address, or other destination. Selecting a result opens its details. You can also choose an action directly from the row.
 
 ### Search nearby
 
@@ -162,7 +177,7 @@ Select the **POIs** tab to browse nearby places or search for a business, catego
 
 Nearby search starts within two miles. **Expand search area to …** and **Reduce search area to …** change the area and repeat your search. The available distances are 2, 5, 10, 25, and 50 miles, shown in your chosen units.
 
-The nearby list loads when you open the tab. **Refresh nearby places** or pull-to-refresh updates that list. To submit a search you've typed, press the keyboard's Search key.
+The nearby list loads when you open Explore. **Refresh nearby places** or pull-to-refresh updates that list. To submit a search you've typed, press the keyboard's Search key.
 
 ### Search somewhere else
 
@@ -194,9 +209,9 @@ Favorites keep places you want to find again. You can save a business from searc
 
 ### Save a listed place
 
-1. Find the place on **POIs**.
+1. Find the place on **Explore → POIs**.
 2. Choose **Add to favorites** from its actions.
-3. Open **POIs → View favorite places** to find it again.
+3. Select **Explore → Favorites** to find it again.
 
 A favorite offers map links, walking directions, Straightpoint, and an option to remove it. Favorites are stored on your phone. With a current position, the list shows the closest first and updates their distances. Without a position, it lists them alphabetically without a distance.
 
@@ -207,11 +222,11 @@ A favorite offers map links, walking directions, Straightpoint, and an option to
 3. In **Name this location**, check the accuracy information and enter a name in **Location name**.
 4. Select **Save**, announced as **Save location** by VoiceOver.
 
-The named location appears in **POIs → View favorite places**. The app saves your position when you choose **Save current location**. Map links open that saved coordinate.
+The named location appears in **Explore → Favorites**. The app saves your position when you choose **Save current location**. Map links open that saved coordinate.
 
 ### Delete several favorites
 
-1. Open **POIs → View favorite places**, then select **Edit** in the navigation header.
+1. Open **Explore → Favorites**, then select **Edit**.
 2. Select a favorite row to check it; select it again to uncheck it. In this mode, rows select favorites rather than opening their details. VoiceOver reads the checkbox state and confirms **Selected [name]** or **Deselected [name]**.
 3. To select the whole list, including favorites not currently onscreen, choose **Select All**. **Deselect All** clears the selection. VoiceOver confirms the bulk selection, and the toolbar shows the selected count.
 4. Select **Delete N favorites**. Read the count in the confirmation, then select its **Delete N favorites** action to remove those favorites, or **Cancel** to keep them. Delete is unavailable when nothing is selected. Deletion can't be undone.
@@ -226,13 +241,84 @@ Bring a Nearby Explorer favorites export into Straightforward without replacing 
 3. Select **Choose export from Files**, then choose the export.
 4. Read the preview: it gives the record count, valid favorites, invalid records skipped, already-imported records, new favorites to add, and provider ID conflicts. Different records with the same provider ID are kept separately. Unsupported metadata fields are counted but not imported.
 5. Select **Import N favorites** to save the new favorites. Choose **Cancel import** or **Back** before confirming to cancel.
-6. After the success message, open **POIs → View favorite places**. Select a favorite for its details, including notes, accessibility notes, website, and floor when present. Native **Back** from the import screen returns to Favorites settings; Back again returns to Settings.
+6. After the success message, open **Explore → Favorites**. Select a favorite for its details, including notes, accessibility notes, website, and floor when present. Native **Back** from the import screen returns to Favorites settings; Back again returns to Settings.
 
 Choose a Nearby Explorer **.nefavs** export, up to 8 MB and 20,000 records. The app previews the file before importing it locally. It keeps the original file intact and retains names, coordinates, addresses, categories, phone numbers, websites, and notes.
 
 Reimporting skips unchanged records and preserves your existing favorites and edits. Changed source records are added as separate favorites. Reimporting can restore an imported favorite you've deleted.
 
 For imported named places, **Open in maps** searches your chosen map provider using the saved name and available address, with the coordinate as location context. It may offer several matches or no match. **Walking directions**, Straightpoint, and virtual starting points use the stored destination coordinate. Personal **Save current location** bookmarks continue to open as coordinate pins, not business-name searches.
+
+<h2 id="routes">Recording and following saved routes</h2>
+
+A saved route records the path you travel, with named waypoints and notes you add along the way. You can follow it in either direction, replay it virtually, or share it with someone else. Routes work on streets and unmapped trails. Open **Explore → Routes** to find your recordings.
+
+### Record a route
+
+1. Select **Record route** to begin recording your position. Allow location access and complete the **Always** permission steps for recording while the phone is locked or you're using another app. The recording screen reports whether background capture is active.
+2. Travel the path you want to save. To mark a place, select **Add waypoint**, enter a **Waypoint name** and, if useful, a **Waypoint note**, then select **Save waypoint**. The app captures the position when you select Add waypoint and keeps recording while you name it. **Cancel waypoint** returns to recording without adding the mark.
+3. Use **Pause recording** and **Resume recording** when you want a break. A pause separates the path into recorded sections.
+4. Select **Finish recording**, enter a **Route name**, and choose whether to keep **Generate automatic guidance** on. Automatic guidance adds points for bends and progress along the recorded path; your named waypoints stay part of the route either way.
+5. Select **Save route**. The saved route's details open, with its recorded distance, sections, named waypoints, and guidance points.
+
+Leaving the recording page keeps recording active. Open **Explore → Routes → Current recording** to return to its controls. **Cancel save** returns to the stopped recording controls; use **Resume recording** to continue. To remove an unfinished recording, select **Discard recording**, then **Discard** in the confirmation. Choose **Cancel** to keep it.
+
+After an interruption, an unfinished route appears as a **paused recording** in Routes. Open it and select **Resume recording** to continue, or finish and save what you have.
+
+### Follow a saved route
+
+1. Open **Explore → Routes** and select the route.
+2. At its recorded starting point, select **Follow route**. To travel back from the recorded end, select **Follow in reverse**.
+3. Complete any location permission steps. The following screen reports whether following continues in the background.
+4. As you move, check the next bend and distance remaining along the recorded path. Named waypoints include your notes. Reverse following reverses the left and right bend descriptions.
+5. Select **Pause following** to pause, **Resume following** to continue, or **End following** to stop. These controls are also available on **Location**.
+
+For spoken route cues, turn on **Settings → Straightpoint → Announcements** and select **Unmute speech** on Location if muted. This controls spoken bends, waypoints, progress, and recovery messages for saved routes, including virtual replay. Route speech uses your location-speech voice settings.
+
+**Turn local alignment feedback on** enables phone-pointing feedback along the next part of the recorded path; **Turn local alignment feedback off** pauses that feedback while keeping route progress active. Its tones and vibrations use **Settings → Straightpoint → Guidance tones**, **Haptics**, and **Tone volume**. Turn your phone to line up with the path's direction; route alignment uses a steady feedback cadence.
+
+Following tracks your position in the recorded sequence, including repeated visits to the same place. If it says **Finding your position on the route**, continue along the current recorded section while it matches your movement. It says **Route guidance resumed** when ordered guidance returns. The next bend and remaining distance then update from the recovered position. **Waiting for fresh location** means the app is waiting for a current position; **Off the recorded path** pauses guidance until it can match your position again.
+
+To start from a particular point, open the route's **Waypoints and guidance**. Find the named waypoint or guidance point you recognize, using its distance from the recorded start and occurrence number. At that position, select **Follow forward from [name]** or **Follow in reverse from [name]**, then confirm **Follow**. End an existing follow session before choosing a different starting point.
+
+At a recording gap, go to the start of the next recorded section, select **Choose next recorded section**, then **Select section**. After an app interruption, open the route and select **Resume interrupted following** when offered to continue from the saved occurrence. **End following** clears that saved follow session.
+
+Route recording and following request background access when you start or explicitly resume them. Their background operation is separate from **Announce while app is in the background**. If background access wasn't granted, allow **Always** in iPhone Settings, return to the route, and resume recording or following to retry.
+
+Following pauses personal Straightpoint guidance while retaining your selected place. After ending route following, turn **Straightpoint** on from Location to resume pointing toward that place.
+
+### Review and manage routes
+
+Open a saved route to review its distance and recorded sections. **Waypoints and guidance** lists named marks, notes, and generated points in recording order. **Generate guidance points** regenerates guidance from the recording while retaining your named waypoints.
+
+**Places along this route** finds places near the recorded path and gives their approximate distance from the recorded start and from the path. Select a place for details. Use **Load more route places** to search farther along the recording, **Retry search** after a failed lookup, and **Show reverse order** or **Show forward order** to change the list order. Read the search status for the portion of the route covered so far.
+
+On a route's name in the Routes list, swipe up or down with VoiceOver to choose **Share route**, **Rename route**, **Explore virtually**, **Follow route**, **Follow in reverse**, or **Delete route**, then double-tap. Without VoiceOver, use the row's **More** menu. Opening the row itself opens details. Available actions reflect the current recording, following, or virtual session; finish recording, end following, or exit virtual mode before starting another.
+
+To rename, choose **Rename route**, edit **Route name**, and select **Save name**, or choose **Cancel rename**. To delete, choose **Delete route**, then **Delete** in the confirmation. Deleting permanently removes the recording and its waypoints; **Cancel** keeps them.
+
+### Share and import a route
+
+1. Open a saved route and select **Share route**, or choose that action on its name in Routes.
+2. Choose the recipient, app, or **Save to Files** in the iPhone share sheet. The file is named **Straightforward route - [route name].json** and contains the complete recording, waypoints, notes, and guidance.
+3. To receive a route, save the shared file in **Files**, then open **Explore → Routes → Import route** and choose it.
+4. After **Route imported. Saved as a new route on this device.**, select **Open imported route** to review it. Choose Follow or Explore virtually when you're ready to use it.
+
+Each import creates an independent saved copy, including when you import the same file again. Your existing routes remain in the library. Cancel the file picker to leave the library unchanged.
+
+<h2 id="route-replay">Exploring a saved route virtually</h2>
+
+Replay moves a simulated position along a recorded route while you stay where you are. You can hear its bends and waypoints and check places, streets, and intersections around the simulated position.
+
+1. Open **Explore → Routes**, select a saved route, and choose **Explore virtually**.
+2. On **Location**, find **Virtual recorded route: [name]** and select **Play route replay**.
+3. Adjust **Virtual travel speed** to **Slow walking**, **Normal walking**, **Fast walking**, or **Driving**. With VoiceOver, swipe up or down on the speed control.
+4. Use **Pause route replay**, **Step forward**, **Step back**, **Previous waypoint**, or **Next waypoint** to explore at your own pace. **Reverse replay** changes direction; **Return to route start** restarts in the selected direction.
+5. Select **Exit virtual mode** to return to your real position.
+
+Replay follows the recorded path automatically. It speaks bends in travel order, reverses left and right when replaying backward, and says **End of route** when it reaches the final endpoint. At a gap, select **Jump to next recorded section** to continue. Leaving the app or locking the phone pauses playback; select **Play route replay** after returning.
+
+Turn on **Settings → Straightpoint → Announcements** to hear replay cues. **Settings → General → Virtual navigation → Virtual sound effects** controls its movement and turn sounds separately. Your personal Straightpoint target stays saved; after exiting replay, turn **Straightpoint** on when you want to use it again.
 
 <h2 id="straightpoint">Pointing toward a place with Straightpoint</h2>
 
@@ -271,12 +357,12 @@ For a watched transit stop, **Open bus stop times** opens its details and depart
 
 <h3 id="shared-location">Use a shared map pin</h3>
 
-You can send a static destination pin from Maps to Straightforward and use it as a Straightpoint target. For example, someone can send a meeting point in Messages without having Straightforward themselves.
+You can send a static destination pin from Maps to Straightforward and use it as a Straightpoint target or a starting point for virtual exploration. For example, someone can send a meeting point in Messages without having Straightforward themselves.
 
 1. In **Apple Maps**, select the destination or drop a pin at the intended stationary location. If someone sent you a location card in Messages, open that pin in Maps first.
 2. Choose **Share**, then **Straightforward**. If it isn't listed, check the share sheet's **More** list.
 3. On **Shared location**, review the static pin and its name. Edit **Pin name** if you want another label. Latitude and longitude appear in the preview.
-4. Select **Set Straightpoint** to replace the selected target. If Straightpoint is on, guidance updates to the new pin. Otherwise, turn it on from **Location** when you want guidance.
+4. Select **Set Straightpoint** to replace the selected target. If Straightpoint is on, guidance updates to the new pin. Otherwise, turn it on from **Location** when you want guidance. Or select **Start virtual navigation from this pin** to explore streets from that location; this opens the virtual controls on **Location**.
 5. To leave without changing the old target, choose **Cancel** or native **Back** before confirming.
 
 The pin marks a fixed destination. If the meeting point changes, ask for a fresh pin.
@@ -353,7 +439,7 @@ Virtual mode lets you explore mapped streets without going there. It moves a sim
 
 ### Choose where to start
 
-1. Open **POIs → Anywhere** and search for a place or address.
+1. Open **Explore → POIs → Anywhere** and search for a place or address.
 2. On the result you want, choose **Explore virtually from here**.
 3. Select **Location** to find **Virtual mode: [place]** and the movement controls.
 
@@ -373,7 +459,7 @@ Location updates for the new position. You can check the other tabs to explore n
 4. Raise the phone upright to pause.
 5. At an intersection, Auto stops. Face another road to take it. To keep going in the original direction, raise the phone upright and lower it again.
 
-Walking plays footsteps; Driving plays a continuous movement sound. There's a brief cue at intersections. A repeating blocked sound means there isn't a mapped continuation in that direction.
+Walking plays footsteps; Driving plays a continuous movement sound. There's a brief cue at intersections. A repeating blocked sound means there isn't a mapped continuation in that direction. Turn these effects on or off with **Settings → General → Virtual navigation → Virtual sound effects**. Spoken announcements are controlled separately.
 
 Leaving Location or switching away from the app pauses Auto. When you return, it needs usable heading and tilt information. Select Manual to stop Auto movement or Exit to finish exploring.
 
@@ -481,6 +567,8 @@ In **General → Distance units**, choose **Feet and miles** or **Meters and kil
 
 **Map provider** chooses Apple Maps or Google Maps for opening places and walking directions.
 
+In **General → Virtual navigation**, **Virtual sound effects** controls walking, engine, and turn sounds for street exploration and recorded-route replay. Spoken announcements and haptics are separate.
+
 ### Location speech
 
 1. Open **Location speech → Language** and choose a language, then a voice. **Voice** lets you change voices within that language. **System default** follows the system speech default.
@@ -489,7 +577,7 @@ In **General → Distance units**, choose **Feet and miles** or **Meters and kil
 
 **Reload voices** updates the list of installed voices. **Reset speech settings** restores defaults. If your selected voice becomes unavailable, the app explains the fallback without discarding your saved choice.
 
-**Keep hearing device audio connected** plays digital silence between announcements to help prevent a hearing device from cutting off the start of speech. It's off by default. It works while the app is open or user-started Background awareness is active, with app speech unmuted. Try it with your hearing device and turn it off if it doesn't help.
+**Keep hearing device audio connected** plays digital silence between announcements to help prevent a hearing device from cutting off the start of speech. It's off by default. It works while the app is open or background location announcements are active, with app speech unmuted. Try it with your hearing device and turn it off if it doesn't help.
 
 ### Ride voice
 
@@ -505,7 +593,7 @@ The Straightpoint page has **Guidance tones**, **Tone volume**, **Haptics**, **A
 
 Place searches, fresh road information, and transit lookups generally need a connection.
 
-Favorites stay saved on your phone offline. Straightpoint uses the selected coordinate and phone sensors for direction.
+Favorites and saved routes stay on your phone offline. You can record, follow, and replay a route, including an unmapped trail, using its recorded path and named waypoints. Straightpoint uses the selected coordinate and phone sensors for direction.
 
 A ride that's already started may keep tracking with its saved trip information and usable GPS. Reconnect to receive cancellations and other service updates.
 
@@ -525,7 +613,7 @@ Email [contact@straightforwardnavigation.com](mailto:contact@straightforwardnavi
 
 1. Reproduce the issue if practical, then open **Settings → Diagnostics**.
 2. Select **Share diagnostic logs**.
-3. Read the location-privacy explanation and select **Continue** if you want to share.
+3. Review the description of the log contents, then select **Continue**.
 4. Choose a destination in the iOS share sheet, such as Messages or **Save to Files**.
 
 If **Send diagnostic logs** is available, it opens an addressed email draft. Add a description and send it through Mail. If Mail won't send, close the draft and use Share diagnostic logs instead. Keep the logs until you've exported what you need.
@@ -546,13 +634,21 @@ Those fields need movement, not a compass turn. As you travel, give the app time
 
 ### You can't hear announcements
 
-Check **Unmute speech**, iPhone volume, and the audio device receiving sound. Try **Settings → Location speech → Preview voice**.
+Check that the individual announcement switches you want on **Location** are on. Select **Unmute speech** if muted, check iPhone volume and the audio device receiving sound, and try **Settings → Location speech → Preview voice**. For locked-screen location announcements, check **Announce while app is in the background** on that settings page and **Always** location permission.
 
 For Straightpoint, check its switch, selected place, alignment, feedback settings, Tone volume, and Require level phone option. For a ride, check Speech and Sound separately. VoiceOver and app speech have different volume controls.
 
 ### A search has no results
 
 Check Nearby or Anywhere, then submit the search with the keyboard's **Search** key. You can expand a nearby search area. If the service is unavailable, check the connection and retry; that message doesn't mean there are no places or stops. You can use the ordinary tabs if an assistant search isn't completing.
+
+### A saved route is finding your position
+
+Continue along the current recorded section and listen for **Route guidance resumed**. If you're starting somewhere else on the recording, end following, open **Waypoints and guidance**, and choose the known occurrence where you're standing. At a gap, use **Choose next recorded section** after reaching that section's start. See [Following a saved route](#routes) for the controls.
+
+### Recording or following paused when you left the app
+
+Check the route screen's background status and **Always** location permission in iPhone Settings. Return and use **Resume recording** or **Resume following**. To find a recording again, open **Explore → Routes → Current recording** or its paused-recording entry. To recover interrupted following, open the saved route and choose **Resume interrupted following** when offered.
 
 ### Road or crossing information is missing
 
@@ -572,6 +668,6 @@ Read its readiness explanation. It needs the supported iOS version, eligible har
 
 ### Your controls differ from the guide
 
-Check your installed build in TestFlight and whether a newer invited build is available. This guide describes build 31. If a feature asks for an updated client, install the newer invited build in TestFlight.
+Check your installed build in TestFlight and whether a newer invited build is available. This guide is updated for the upcoming iPhone beta. If a feature asks for an updated client, install the newer invited build in TestFlight.
 
 [Return to contents](#contents)
