@@ -5,7 +5,7 @@ permalink: /nfbny/
 content_class: manual
 noindex: true
 sitemap: false
-description: Join the Straightforward demo at the NFB NY travel seminar on November 12, 2026, with optional nearby places to explore and a way to share feedback.
+description: Try Straightforward at the NFB NY travel seminar on November 12, 2026. Choose a nearby place, point toward it with Straightpoint, and share what you find.
 ---
 
 # Straightforward at NFB NY
@@ -17,26 +17,29 @@ Keep this page handy: **straightforwardnavigation.com/nfbny**.
 <nav aria-label="On this page">
   <ul>
     <li><a href="#joining">Joining the beta</a></li>
-    <li><a href="#choose-a-place">Optional scavenger hunt: choose a place</a></li>
+    <li><a href="#choose-a-place">Scavenger hunt: point toward a place</a></li>
     <li><a href="#return">Return and share what you found</a></li>
   </ul>
 </nav>
 
 <h2 id="joining">Joining the beta</h2>
 
-Straightforward is an iPhone beta distributed through Apple's TestFlight app, not a public App Store download. **Signup is open now, so you can install before the seminar.** [Join the Straightforward beta through TestFlight](https://testflight.apple.com/join/rYpb4aSA). This demo signup has a limit of 100 testers. Follow Apple's instructions to install TestFlight and then Straightforward. If you already have the beta, you can use your installed app.
+[Join the Straightforward beta through TestFlight](https://testflight.apple.com/join/rYpb4aSA) to install before the seminar. Follow Apple's instructions to install TestFlight and then Straightforward. If you already have Straightforward, you're ready to go.
 
-Joining makes you an ongoing beta tester, not just a participant for the day. Closing this signup link later will not remove people who have already joined.
+For help, ask during the seminar or [email contact@straightforwardnavigation.com](mailto:contact@straightforwardnavigation.com). The [Straightforward User Guide]({{ '/manual/' | relative_url }}) covers the app's controls and features.
 
-For help getting started, ask during the seminar or [email contact@straightforwardnavigation.com](mailto:contact@straightforwardnavigation.com). The [Straightforward User Guide]({{ '/manual/' | relative_url }}) explains the app's controls and features.
+<h2 id="choose-a-place">Scavenger hunt: point toward a place</h2>
 
-<h2 id="choose-a-place">Optional scavenger hunt: choose a place</h2>
+Choose one of the places below and use Straightpoint to find which direction it is from you. Straightpoint gives straight-line direction rather than walking directions; for a walking route, choose **Walking directions** from the place's actions.
 
-Pick one nearby destination that interests you. Try finding it in Straightforward, checking its address and direction, or opening walking directions in your map app. Notice which information helps you orient yourself and what leaves you with questions. You can also explore a destination virtually without leaving the hotel.
+1. Open the **POIs** tab and choose **Nearby** (VoiceOver calls it **Search nearby**). In **Search for a place**, enter your chosen place's name and press the keyboard's **Search** key.
+2. Find the result with the address listed below. With VoiceOver, focus that result, turn the rotor to **Actions**, then swipe up or down to **Watch with Straightpoint** and double-tap. Without VoiceOver, tap the result's **More** button and choose **Watch with Straightpoint**.
+3. Select the **Location** tab and turn the **Straightpoint** switch on, following any permission prompts.
+4. Slowly turn your phone to point toward the place. Tones and vibrations tell you when it lines up; turn away and the alignment feedback stops. Check the distance and direction on Location as you explore. Turn **Straightpoint** off when you're finished.
 
-**No purchase is required.** The activity is optional; choose whether and how far to go using your usual travel skills and mobility tools. Straightpoint indicates a straight-line direction toward a target, not a walking route or a safe crossing.
+Try it outside, or compare the directions to several places from the hotel. Notice what helps you get your bearings.
 
-The distances below are approximate, previously mapped estimates from the hotel—not field-checked walking routes. Entrances and on-device navigation have not been verified. The Google Maps links identify each destination; they are not entrance instructions.
+Distances below are approximate from the hotel.
 
 ### Devoción
 
@@ -70,6 +73,6 @@ Bring back:
 
 - **One thing that helped** you find or explore your place.
 - **One thing that was confusing** or that you would change.
-- Optionally, **the name of an item sold there**—no need to buy anything.
+- **The name of an item sold there.**
 
 Share during the seminar or [send demo feedback to contact@straightforwardnavigation.com](mailto:contact@straightforwardnavigation.com). Please include the place you chose and what the app said or did, if you remember.
