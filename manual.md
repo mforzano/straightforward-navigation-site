@@ -7,7 +7,7 @@ permalink: /manual/
 
 # Straightforward user guide
 
-Updated for the upcoming iPhone beta
+Updated for iPhone beta 0.1.0 (33)
 
 Straightforward puts your address, nearby places, intersections, and transit information together. You can check your surroundings, choose what gets announced as you move, or explore somewhere before you go there. Straightpoint helps you point your phone toward a place. It gives you the straight-line direction to your chosen place.
 
@@ -177,11 +177,13 @@ Select **Explore → POIs** to browse nearby places or search for a business, ca
 
 Nearby search starts within two miles. **Expand search area to …** and **Reduce search area to …** change the area and repeat your search. The available distances are 2, 5, 10, 25, and 50 miles, shown in your chosen units.
 
-The nearby list loads when you open Explore. **Refresh nearby places** or pull-to-refresh updates that list. To submit a search you've typed, press the keyboard's Search key.
+Select **Load more places**, when offered below the results, to find more matches within the same search area and query. New places are added after the existing results without rearranging the rows you've already browsed. Loading more keeps the original search location even if you've walked farther.
+
+The POI list, including its distances and directions, stays in place while you walk. **Refresh nearby places** or pull-to-refresh starts a fresh search from your latest position, keeping your search mode, query, and chosen radius. Returning to **Explore** from another bottom tab also repeats the search. Returning from a place's details or switching among the POIs, Favorites, and Routes section buttons keeps the list. To submit a search you've typed, press the keyboard's **Search** key.
 
 ### Search somewhere else
 
-Choose **Anywhere**, announced as **Search anywhere** by VoiceOver, then enter a place or address and press **Search**. Include the city or region to help find the right place. **Repeat anywhere search** runs the search again.
+Choose **Anywhere**, announced as **Search anywhere** by VoiceOver, then enter a place or address and press **Search**. For a business name that could match several places, nearby matches are favored. Include a city, region, or full address to find a destination farther away. Anywhere searches beyond the Nearby search radius. **Repeat anywhere search** runs the search again.
 
 Use **Anywhere** to find a place in another city and start [virtual exploration](#virtual-walk).
 
@@ -268,7 +270,7 @@ After an interruption, an unfinished route appears as a **paused recording** in 
 ### Follow a saved route
 
 1. Open **Explore → Routes** and select the route.
-2. At its recorded starting point, select **Follow route**. To travel back from the recorded end, select **Follow in reverse**.
+2. Select **Follow route** to travel in recording order, or **Follow in reverse** to travel the other way. You can start partway along the recorded path: the app automatically joins at your position when it can identify one unambiguous place in the recording, including while you're standing still.
 3. Complete any location permission steps. The following screen reports whether following continues in the background.
 4. As you move, check the next bend and distance remaining along the recorded path. Named waypoints include your notes. Reverse following reverses the left and right bend descriptions.
 5. Select **Pause following** to pause, **Resume following** to continue, or **End following** to stop. These controls are also available on **Location**.
@@ -277,9 +279,11 @@ For spoken route cues, turn on **Settings → Straightpoint → Announcements** 
 
 **Turn local alignment feedback on** enables phone-pointing feedback along the next part of the recorded path; **Turn local alignment feedback off** pauses that feedback while keeping route progress active. Its tones and vibrations use **Settings → Straightpoint → Guidance tones**, **Haptics**, and **Tone volume**. Turn your phone to line up with the path's direction; route alignment uses a steady feedback cadence.
 
-Following tracks your position in the recorded sequence, including repeated visits to the same place. If it says **Finding your position on the route**, continue along the current recorded section while it matches your movement. It says **Route guidance resumed** when ordered guidance returns. The next bend and remaining distance then update from the recovered position. **Waiting for fresh location** means the app is waiting for a current position; **Off the recorded path** pauses guidance until it can match your position again.
+Following tracks your position in the recorded sequence, including repeated visits to the same place. At the start, give it time to receive a current position. **Move onto the recorded path to begin following** means it hasn't found a nearby part of the path. **Your position on the route is ambiguous. Choose a known waypoint** means more than one recorded occurrence could match; use the waypoint controls below to choose the one you intend.
 
-To start from a particular point, open the route's **Waypoints and guidance**. Find the named waypoint or guidance point you recognize, using its distance from the recorded start and occurrence number. At that position, select **Follow forward from [name]** or **Follow in reverse from [name]**, then confirm **Follow**. End an existing follow session before choosing a different starting point.
+During following, **Finding your position on the route** means the app is matching your position to the current recorded section. Continue along that section and listen for **Route guidance resumed** when ordered guidance returns. The next bend and remaining distance then update from the recovered position. **Waiting for fresh location** means the app is waiting for a current position; **Off the recorded path** pauses guidance until it can match your position again.
+
+To choose a particular starting occurrence, such as one of several visits to the same place, open the route's **Waypoints and guidance**. Find the named waypoint or guidance point you recognize, using its distance from the recorded start and occurrence number. At that position, select **Follow forward from [name]** or **Follow in reverse from [name]**, then confirm **Follow**. End an existing follow session before choosing a different starting point.
 
 At a recording gap, go to the start of the next recorded section, select **Choose next recorded section**, then **Select section**. After an app interruption, open the route and select **Resume interrupted following** when offered to continue from the saved occurrence. **End following** clears that saved follow session.
 
@@ -333,6 +337,8 @@ Straightpoint gives feedback when your phone points toward a selected place. You
 
 If Straightpoint is already on, choosing another place updates the guidance after any required permission check. You can also choose a target through [Ask Straightforward](#assistant).
 
+If Straightpoint can't start, its row shows the reason and VoiceOver announces it. Read the message beside the switch. Include that exact message when [sending feedback and diagnostic logs](#diagnostics).
+
 Tones and vibrations become more frequent as you get closer, and the tones change pitch. Spoken feedback can give the place's name, straight-line distance, and compass direction. A separate **Near [place]** cue tells you you're close to the selected coordinate.
 
 The distance on Location remains readable even with guidance off or the phone pointing away.
@@ -375,7 +381,9 @@ Select the **Transit** tab to load nearby stops. Stop rows show the name, servic
 
 **Near side** means before the cross street in the bus's direction of travel. **Far side** means after it. These descriptions refer to the bus's direction, not your walking direction. Near-side and far-side descriptions appear when the stop and road data support them.
 
-Select a stop to open its departures. **Refresh** or pull-to-refresh updates nearby stops or the stop details you're reading. Stop rows and detail headings also offer **Open in maps**, **Walking directions**, and **Watch with Straightpoint**. These use the selected stop's coordinate, not a search for another stop with the same name.
+The nearby stop list, including its distances and directions, stays in place while you walk. **Refresh nearby stops**, pull-to-refresh, or returning to **Transit** from another bottom tab searches from your latest position. Returning from a stop's details keeps the nearby list.
+
+Select a stop to open its departures. **Refresh departures** or pull-to-refresh updates the stop details you're reading. Stop rows and detail headings also offer **Open in maps**, **Walking directions**, and **Watch with Straightpoint**. These use the selected stop's coordinate, not a search for another stop with the same name.
 
 ### Filter departures
 
@@ -636,7 +644,7 @@ Those fields need movement, not a compass turn. As you travel, give the app time
 
 Check that the individual announcement switches you want on **Location** are on. Select **Unmute speech** if muted, check iPhone volume and the audio device receiving sound, and try **Settings → Location speech → Preview voice**. For locked-screen location announcements, check **Announce while app is in the background** on that settings page and **Always** location permission.
 
-For Straightpoint, check its switch, selected place, alignment, feedback settings, Tone volume, and Require level phone option. For a ride, check Speech and Sound separately. VoiceOver and app speech have different volume controls.
+For Straightpoint, read any startup message beside its switch, then check its selected place, alignment, feedback settings, Tone volume, and Require level phone option. If it won't start, include the exact message in your feedback and [diagnostic log report](#diagnostics). For a ride, check Speech and Sound separately. VoiceOver and app speech have different volume controls.
 
 ### A search has no results
 
@@ -644,7 +652,7 @@ Check Nearby or Anywhere, then submit the search with the keyboard's **Search** 
 
 ### A saved route is finding your position
 
-Continue along the current recorded section and listen for **Route guidance resumed**. If you're starting somewhere else on the recording, end following, open **Waypoints and guidance**, and choose the known occurrence where you're standing. At a gap, use **Choose next recorded section** after reaching that section's start. See [Following a saved route](#routes) for the controls.
+When starting with **Follow route** or **Follow in reverse**, wait for a current position; the app can join automatically partway along an unambiguous recorded path. If it says **Move onto the recorded path to begin following**, move onto the path. If it says your position is ambiguous, end following, open **Waypoints and guidance**, and choose the known occurrence where you're standing. During following, continue along the current recorded section and listen for **Route guidance resumed**. At a gap, use **Choose next recorded section** after reaching that section's start. See [Following a saved route](#routes) for the controls.
 
 ### Recording or following paused when you left the app
 
@@ -668,6 +676,6 @@ Read its readiness explanation. It needs the supported iOS version, eligible har
 
 ### Your controls differ from the guide
 
-Check your installed build in TestFlight and whether a newer invited build is available. This guide is updated for the upcoming iPhone beta. If a feature asks for an updated client, install the newer invited build in TestFlight.
+Check your installed build in TestFlight and whether a newer invited build is available. This guide covers iPhone beta **0.1.0 (33)**. If a feature asks for an updated client, install the newer invited build in TestFlight.
 
 [Return to contents](#contents)
