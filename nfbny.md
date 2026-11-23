@@ -24,9 +24,9 @@ Seminar page: **straightforwardnavigation.com/nfbny**.
 
 <h2 id="joining">Joining the beta</h2>
 
-[Join the Straightforward beta through TestFlight](https://testflight.apple.com/join/rYpb4aSA) to install before the seminar. Follow Apple's instructions to install TestFlight and then Straightforward. If you already have Straightforward, you're ready to go.
+To join the Straightforward beta, [email contact@straightforwardnavigation.com](mailto:contact@straightforwardnavigation.com) with the email address you use for TestFlight and ask to be added.
 
-For help, ask during the seminar or [email contact@straightforwardnavigation.com](mailto:contact@straightforwardnavigation.com). The [Straightforward User Guide]({{ '/manual/' | relative_url }}) covers the app's controls and features.
+The [Straightforward User Guide]({{ '/manual/' | relative_url }}) covers the app's controls and features.
 
 <h2 id="choose-a-place">Scavenger hunt: point toward a place</h2>
 
